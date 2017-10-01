@@ -1,0 +1,7 @@
+[user]
+name = Keqi Huang
+email = keqih@smu.edu
+[push]
+default = matching
+[core]
+excludesfile =/Users/lisanaaa/Documents/GitHub/lc/.gitignore
