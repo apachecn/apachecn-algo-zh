@@ -1,4 +1,4 @@
-#LinkedList
+# LinkedList
 
 结点定义如下：
 
@@ -11,14 +11,16 @@
 可以使用的技巧包括:
 
 
-##Dummy head
+## Dummy head
 
 有的时候因为边界条件，需要判定是否是list的head，因为处理起来会有些不同，而创造一个dummy head则可以极大的解决一些问题。
 
-	     dummy = ListNode(-1)
+```
+	dummy = ListNode(-1)
         dummy.next = head
+```
 
-##双指针
+## 双指针
 
 - 19. Remove Nth Node From End of List
 
@@ -78,7 +80,7 @@ class Solution(object):
 ```
 
 
-##寻找LinkedList中间项
+## 寻找LinkedList中间项
 
 依旧使用双指针，快慢指针：快指针每次走两步，慢指针每次走一步，快指针如果到头了，那么慢指针也会在中间了，这个中间可以考量，如果是奇数的话必然是中间。
 

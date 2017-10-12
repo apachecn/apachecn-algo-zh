@@ -48,17 +48,17 @@ function Binary_Search(x, A, l, u)
 
 或者这样，正确代码
 
-```
+```python
 def binarySearch(nums, target):
     l, r = 0, len(nums) -1
     while l <= r:
-        mid = (l+r) / 2
-        if nums[mid] == target:
-            return mid
-        elif nums[mid] > target:
+        mid = l + ((r-l) >> 2)
+        if nums[mid] > target:
             r = mid - 1
-        else:
+        elif:
             l = mid + 1
+	else: 
+	    return mid
     return -1
 ```
 
