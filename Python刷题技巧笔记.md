@@ -58,8 +58,8 @@ python 的三目运算符是这么写的 x if y else z
 考虑这种list of list: matrix = [ [1,2,3] , [4,5,6] ]
 
 
-row  = len(matrix)
-col = len(matrix[0]) if row else 0 
+```row  = len(matrix)```,
+```col = len(matrix[0]) if row else 0 ```
 
 
 这样写通用的原因是， 当matrix = [], row = 0, col =0
