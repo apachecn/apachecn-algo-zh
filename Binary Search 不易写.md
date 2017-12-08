@@ -55,7 +55,7 @@ def binarySearch(nums, target):
         mid = l + ((r-l) >> 2)
         if nums[mid] > target:
             r = mid - 1
-        elif:
+        elif nums[mid] < target:
             l = mid + 1
 	else: 
 	    return mid
