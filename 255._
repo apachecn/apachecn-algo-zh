@@ -1,0 +1,27 @@
+### 255. Verify Preorder Sequence in Binary Search Tree
+
+题目:
+<https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/>
+
+
+难度:
+
+Medium
+
+
+思路：
+思路
+二叉搜索树先序遍历序列的特点是降序的部分一定是向左走的，一旦开始升序说明开始向右走了，
+则上一个降序的点则限定了后面的数的最小值。如果继续降序，说明又向左走了，这样等到下次向右走得时候也要再次更新最小值。
+
+
+>     10
+>    /  \
+>   5    12
+>  / \
+> 2   6
+
+
+```python
+
+```
