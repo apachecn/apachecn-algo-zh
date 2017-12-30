@@ -1,8 +1,8 @@
-### 141. Linked List Cycle
+### 142. Linked List Cycle II
 
 题目:
 
-<https://leetcode.com/problems/linked-list-cycle/>
+<https://leetcode.com/problems/linked-list-cycle-ii/>
 
 
 难度:
