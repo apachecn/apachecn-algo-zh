@@ -1,0 +1,51 @@
+### 26. Remove Duplicates from Sorted Array
+
+
+
+题目:
+<https://leetcode.com/problems/remove-duplicates-from-sorted-array/>
+
+
+难度:
+Easy
+
+思路：
+因为题目说了是```sorted array```，所以只需要不停判断当前位置值和下一位置是否相等，若相等则```remove当前值```，否则```move```到下一位置做重复判断
+
+
+```python
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        i = 0
+        while i < (len(nums) - 1):
+            if nums[i] == nums[i+1]:
+                nums.remove(nums[i])
+            else:
+                i += 1
+        return len(nums)
+```
+
+
+这里代码用```while loop```而不用```for loop```是因为```remove```操作之后```nums```的长度会变化
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
