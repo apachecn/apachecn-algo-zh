@@ -10,7 +10,7 @@
 Medium
 
 思路：
-稍微改了一下[141]()，这里稍微注意一下```while-else clause```就行
+稍微改了一下[141](https://github.com/Lisanaaa/thinking_in_lc/blob/master/141._linked_list_cycle.md)，这里稍微注意一下```while-else clause```就行
 
 
 ```python
