@@ -1,7 +1,9 @@
 能用此模板解决的题目目前有如下：
 [leetcode 003](https://github.com/Lisanaaa/thinking_in_lc/blob/master/003._longest_substring_without_repeating_characters.md), 
+[leetcode 030](https://github.com/Lisanaaa/thinking_in_lc/edit/master/30._Substring_with_Concatenation_of_All_Words.md), 
 [leetcode 076](https://github.com/Lisanaaa/thinking_in_lc/blob/master/076._Minimum_Window_Substring.md), 
-[leetcode 159](https://github.com/Lisanaaa/thinking_in_lc/blob/master/159._Longest_Substring_with_At_Most_Two_Distinct_Characters.md)
+[leetcode 159](https://github.com/Lisanaaa/thinking_in_lc/blob/master/159._Longest_Substring_with_At_Most_Two_Distinct_Characters.md), 
+[leetcode 438](https://github.com/Lisanaaa/thinking_in_lc/blob/master/438._Find_All_Anagrams_in_a_String.md)
 
 
 
