@@ -46,7 +46,7 @@ class Solution(object):
             # increase begin pointer to make it invalid/valid again
             while counter == 0: # counter condition. different question may have different condition
                 if s[begin] in maps:
-                    maps[s[begin]] -= 1 # plus or minus one
+                    maps[s[begin]] += 1 # plus or minus one
                     if maps[s[begin]] > 0:
                         counter += 1 # modify the counter according the requirement(different condition).
                 begin += 1
@@ -72,13 +72,13 @@ class Solution(object):
         length = sys.maxint 
         while end < len(s):
             if s[end] in maps:
-                maps[s[end]] += 1 
+                maps[s[end]] -= 1 
                 if maps[s[end]] == 0:
                     counter -= 1 
             end += 1
             while counter == 0:
                 if s[begin] in maps:
-                    maps[s[begin]] -= 1 
+                    maps[s[begin]] += 1 
                     if maps[s[begin]] > 0:
                         counter += 1 
                 begin += 1
