@@ -38,7 +38,7 @@ class Solution(object):
         # loop at the begining of the source string
         while end < len(s):
             if s[end] in maps:
-                maps[s[end]] += 1 # plus or minus one
+                maps[s[end]] -= 1 # plus or minus one
                 if maps[s[end]] == 0:
                     counter -= 1 # modify the counter according the requirement(different condition).
             end += 1
