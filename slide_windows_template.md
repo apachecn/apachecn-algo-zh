@@ -10,7 +10,7 @@
 带注释python版本
 ```python
 class Solution(object):
-    def slideWindowTemplate(self, s, t):
+    def slideWindowTemplateByLisanaaa(self, s, t):
         """
         :type s: str
         :type t: str
@@ -62,7 +62,7 @@ class Solution(object):
 无注释python版本：
 ```python
 class Solution(object):
-    def minWindow(self, s, t):
+    def slideWindowTemplateByLisanaaa(self, s, t):
         res = []
         if len(t) > len(s):
             return res
