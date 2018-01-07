@@ -220,7 +220,7 @@ public static boolean isValid(List<Integer> list){
 }
 ```
 
-
+参考[](https://segmentfault.com/a/1190000006121957)
 
 
 ## 以Generate Parentheses为例，backtrack的题到底该怎么去思考？
