@@ -220,7 +220,9 @@ public static boolean isValid(List<Integer> list){
 }
 ```
 
-参考[](https://segmentfault.com/a/1190000006121957)
+参考[Backtracking回溯法(又称DFS,递归)全解](https://segmentfault.com/a/1190000006121957), 
+[Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
+
 
 
 ## 以Generate Parentheses为例，backtrack的题到底该怎么去思考？
