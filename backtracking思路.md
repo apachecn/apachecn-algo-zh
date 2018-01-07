@@ -220,8 +220,8 @@ public static boolean isValid(List<Integer> list){
 }
 ```
 
-参考[Backtracking回溯法(又称DFS,递归)全解](https://segmentfault.com/a/1190000006121957), 
-[Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
+参考[Backtracking回溯法(又称DFS,递归)全解](https://segmentfault.com/a/1190000006121957) 
+以及 [Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
 
 
 
