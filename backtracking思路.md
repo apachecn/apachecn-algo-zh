@@ -17,7 +17,9 @@ DFS是一种开路策略，就是一条道先走到头，再往回走一步换�
 一般回溯的问题有三种：
 
 1. Find a path to success 有没有解
-2. Find all paths to success 求所有解，求所有解的个数，求所有解的具体信息
+2. Find all paths to success 求所有解
+	- 2.1 求所有解的个数，
+	- 2.2 求所有解的具体信息
 3. Find the best path to success 求最优解
 
 理解回溯：给一堆选择, 必须从里面选一个. 选完之后我又有了新的一组选择. ```This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.```
