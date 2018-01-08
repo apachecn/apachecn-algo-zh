@@ -4,7 +4,7 @@
 其实原本是根本不知道还有tree search的，只知道graph search，原来graph search就是一般我看到的dfs，bfs，有一个结构来记录visited node，这样在寻找邻居的时候，防止已经visit的node再被visit.
 
 
-### Tree Search
+## Tree Search
 
 general tree search pseudocode
 
@@ -21,112 +21,7 @@ function TREE_SEARCH(problem, strategy) returns a solution, or failure
 ```
 
 
-
-
-### Graph Search
-
-very simple fix: never expand a state type twice
-
-```
-function GRAPH_SEARCH(problem, fringe) returns a solution, or failure
-	closed <- an empty set
-	fringe <- INSERT(MAKE-NODE(INITIAL-STATE[problem]),fringe)
-	loop do
-		if fringe is empty then return failure
-		node <- REMOVE-FRONT(fringe)
-		if GOAL-TEST(problem, STATE[node]) then return node
-		if STATE[node] is not in closed then
-			add STATE[node] to closed
-			fringe <- INSERTALL(EXPAND(node, problem))
-	end
-
-```
-
-
-重要的点：
-
-- fringe
-- strategy
-
-然后没有查重的过程
-
-####DFS 
-
-递归伪码
-
-```
-1  procedure DFS(G,v):
-2      label v as discovered
-3      for all edges from v to w in G.adjacentEdges(v) do
-4          if vertex w is not labeled as discovered then
-5              recursively call DFS(G,w)
-```
-
-非递归伪码，其实递归在计算机内部就是用的stack，所以这里用stack可以解决问题
-
-每次都expand deepest node
-
-```
-1  procedure DFS-iterative(G,v):
-2      let S be a stack
-3      S.push(v)
-4      while S is not empty
-5          v = S.pop()
-6          for all edges from v to w in G.adjacentEdges(v) do
-7              if w is not labeled as discovered:
-8                  label w as discovered
-9                  S.push(w)
-```
-
-
-#### BFS
-
-伪码，这个伪码提供的信息有点多啊，把Unweighted shortest distance顺便也求出来了。
-
-```
- 1 Breadth-First-Search(Graph, root):
- 2 
- 3     for each node n in Graph:            
- 4         n.distance = INFINITY        
- 5         n.parent = NIL
- 6 
- 7     create empty queue Q      
- 8 
- 9     root.distance = 0
-10     Q.enqueue(root)                      
-11 
-12     while Q is not empty:        
-13     
-14         current = Q.dequeue()
-15     
-16         for each node n that is adjacent to current:
-17             if n.distance == INFINITY:
-18                 n.distance = current.distance + 1
-19                 n.parent = current
-20                 Q.enqueue(n)
-```
-
-其实跟以上DFS的非递归写成一样也行
-
-expand the shallowest node
-
-
-```
-1  procedure BFS-iterative(G,v):
-2      let Q be a queue
-3      Q.enqueue(v)
-4      while Q is not empty
-5          v = Q.dequeue()
-6          for all edges from v to w in G.adjacentEdges(v) do
-7              if w is not labeled as discovered:
-8                  label w as discovered
-9                  Q.enqueue(w)
-```
-
-BFS和DFS其实就是每次选下一个expand的node用的strategy不同.
-
-
-#### DFS/BFS with Path
+## DFS/BFS 
 
 可以让stack/queue记录更多一些的东西，因为反正stack/queue更像通用结构
 
@@ -146,38 +41,109 @@ graph = {'A': set(['B', 'C']),
          'D': set(['B']),
          'E': set(['B', 'F']),
          'F': set(['C', 'E'])}
-
-
-
-
-def dfs_paths(graph, start, goal):
+```
+### DFS
+The implementation below uses the stack data-structure to build-up and return a set of vertices that are accessible within the subjects connected component. Using Python’s overloading of the subtraction operator to remove items from a set, we are able to add only the unvisited adjacent vertices.
+```python
+def dfs(graph, start): # iterative
+    visited, stack = [], [start]
+    while stack:
+        vertex = stack.pop()
+        if vertex not in visited:
+            visited.append(vertex)
+            stack.extend(graph[vertex] - set(visited))
+    return visited
+print(dfs(graph, 'A')) # ['A', 'C', 'F', 'E', 'B', 'D'] 这只是其中一种答案 
+```
+The second implementation provides the same functionality as the first, however, this time we are using the more succinct recursive form. Due to a common Python gotcha with default parameter values being created only once, we are required to create a new visited set on each user invocation. Another Python language detail is that function variables are passed by reference, resulting in the visited mutable set not having to reassigned upon each recursive call.
+```python
+def dfs(graph, start, visited=None): # recursive
+    if visited is None:
+        visited = []
+    print('visiting', start)
+    visited.append(start)
+    for next in graph[start]:
+        if next not in visited:
+            dfs(graph, next, visited)
+    return visited
+print(dfs(graph, 'A')) # ['A', 'C', 'F', 'E', 'B', 'D'] 这只是其中一种答案 
+```
+We are able to tweak both of the previous implementations to return all possible paths between a start and goal vertex. The implementation below uses the stack data-structure again to iteratively solve the problem, yielding each possible path when we locate the goal. Using a generator allows the user to only compute the desired amount of alternative paths.
+```python
+def dfs_paths(graph, start, goal): # iterative
     stack = [(start, [start])]
-    visited = set()
     while stack:
         (vertex, path) = stack.pop()
-        if vertex not in visited:
-            if vertex == goal:
-                return path
-            visited.add(vertex)
-            for neighbor in graph[vertex]:
-                stack.append((neighbor, path + [neighbor]))
-
-print (dfs_paths(graph, 'A', 'F'))   #['A', 'B', 'E', 'F']
+        for next in graph[vertex] - set(path):
+            if next == goal:
+                yield path + [next]
+            else:
+                stack.append((next, path + [next]))
+print(list(dfs_paths(graph, 'A', 'F'))) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
+```
+The implementation below uses the recursive approach calling the ‘yield from’ PEP380 addition to return the invoked located paths. Unfortunately the version of Pygments installed on the server at this time does not include the updated keyword combination.
+```python
+def dfs_paths(graph, start, goal, path=None): # recursive
+    if path is None:
+        path = [start]
+    if start == goal:
+        yield path
+    for next in graph[start] - set(path):
+        yield from dfs_paths(graph, next, goal, path + [next])
+print(list(dfs_paths(graph, 'C', 'F'))) # [['C', 'A', 'B', 'E', 'F'], ['C', 'F']]
 ```
 
-一旦BFS/DFS与更具体的，更有特性的data structure结合起来，比如binary search tree，那么BFS/DFS会针对这个tree traversal显得更有特性。
+### BFS
+
+Similar to the iterative DFS implementation the only alteration required is to remove the next item from the beginning of the list structure instead of the stacks last.
+```python
+def bfs(graph, start): # iterative
+    visited, queue = [], [start]
+    while queue:
+        vertex = queue.pop(0)
+        if vertex not in visited:
+            visited.append(vertex)
+            queue.extend(graph[vertex] - set(visited))
+    return visited
+print(bfs(graph, 'A')) # ['A', 'C', 'B', 'F', 'D', 'E']
+```
+This implementation can again be altered slightly to instead return all possible paths between two vertices, the first of which being one of the shortest such path.
+```python
+def bfs_paths(graph, start, goal):
+    queue = [(start, [start])]
+    while queue:
+        (vertex, path) = queue.pop(0)
+        for next in graph[vertex] - set(path):
+            if next == goal:
+                yield path + [next]
+            else:
+                queue.append((next, path + [next]))
+print(list(bfs_paths(graph, 'A', 'F'))) # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
+```
+Knowing that the shortest path will be returned first from the BFS path generator method we can create a useful method which simply returns the shortest path found or ‘None’ if no path exists. As we are using a generator this in theory should provide similar performance results as just breaking out and returning the first matching path in the BFS implementation.
+```python
+def bfs_paths(graph, start, goal):
+    queue = [(start, [start])]
+    while queue:
+        (vertex, path) = queue.pop(0)
+        for next in graph[vertex] - set(path):
+            if next == goal:
+                yield path + [next]
+            else:
+                queue.append((next, path + [next]))
+def shortest_path(graph, start, goal):
+    try:
+        return next(bfs_paths(graph, start, goal))
+    except StopIteration:
+        return None
+print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
+```
+
+#### Improvement/Follow up
+
+1. 一旦BFS/DFS与更具体的，更有特性的data structure结合起来，比如binary search tree，那么BFS/DFS会针对这个tree traversal显得更有特性。
+2. it's worth mentioning that there is an optimized queue object in the collections module called [deque](https://docs.python.org/2/library/collections.html#collections.deque)) for which removing items from the beginning ( or popleft ) takes constant time as opposed to O(n) time for lists. 
 
 
-#### UCS
 
-expand the cheapest node first
-
-Fringe is a priority queue
-
-乃Dijkstra算法
-
-
-#### Greedy
-
-#### A*
 
