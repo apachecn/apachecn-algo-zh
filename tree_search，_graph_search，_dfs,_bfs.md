@@ -146,4 +146,11 @@ print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
 
 
 
+### Resources
+
+[Depth-and Breadth-First Search](https://jeremykun.com/2013/01/22/depth-and-breadth-first-search/)
+[Edd Mann](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)
+[graph - Depth-first search in Python](https://codereview.stackexchange.com/questions/78577/depth-first-search-in-python)
+
+
 
