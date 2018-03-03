@@ -1,4 +1,4 @@
-
+如图，![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/interview%20question/WePay/WePay.jpg)
 
 就是一个slide windows 的题目
 
