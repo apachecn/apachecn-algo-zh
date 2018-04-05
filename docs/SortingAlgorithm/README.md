@@ -2,15 +2,15 @@
 八大排序，三大查找是《数据结构》当中非常基础的知识点，在这里为了复习顺带总结了一下常见的八种排序算法。
 常见的八大排序算法，他们之间关系如下：
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93.png)
+![](/images/SortingAlgorithm/八大排序算法总结.png)
 
 他们的性能比较：
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%A7%E8%83%BD%E6%AF%94%E8%BE%83.png)
+![](/images/SortingAlgorithm/八大排序算法性能.png)
 
 ### 直接插入排序 (Insertion sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/直接插入排序.gif)
 
 直接插入排序的核心思想就是：将数组中的所有元素依次跟前面已经排好的元素相比较，如果选择的元素比已排序的元素小，则交换，直到全部元素都比较过。
 因此，从上面的描述中我们可以发现，直接插入排序可以用两个循环完成：
@@ -33,7 +33,7 @@ def insert_sort(L):
 ```
 ### 希尔排序 (Shell sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.png)
+![](/images/SortingAlgorithm/希尔排序.png)
 
 希尔排序的算法思想：将待排序数组按照步长gap进行分组，然后将每组的元素利用直接插入排序的方法进行排序；每次将gap折半减小，循环上述操作；当gap=1时，利用直接插入，完成排序。
 同样的：从上面的描述中我们可以发现：希尔排序的总体实现应该由三个循环完成：
@@ -62,7 +62,7 @@ def insert_shell(L):
 
 ### 简单选择排序 (Selection sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/简单选择排序.gif)
 
 简单选择排序的基本思想：比较+交换。
 
@@ -102,7 +102,7 @@ def select_sort(L):
 
 （这样满足了大顶堆那条性质：位于根节点的元素一定是当前序列的最大值）
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E6%9E%84%E5%BB%BA%E5%A4%A7%E9%A1%B6%E5%A0%86.png)
+![](/images/SortingAlgorithm/构建大顶堆.png)
 
 2. 取出当前大顶堆的根节点，将其与序列末尾元素进行交换；
 
@@ -110,7 +110,7 @@ def select_sort(L):
 
 3. 对交换后的n-1个序列元素进行调整，使其满足大顶堆的性质；
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E8%B0%83%E6%95%B4%E5%A4%A7%E9%A1%B6%E5%A0%86.png)
+![](/images/SortingAlgorithm/调整大顶堆.png)
 
 4. 重复2.3步骤，直至堆中只有1个元素为止
 
@@ -161,7 +161,7 @@ def heap_sort(L):
 ```
 ### 冒泡排序 (Bubble sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/冒泡排序.gif)
 
 冒泡排序思路比较简单：
 
@@ -186,7 +186,7 @@ def bubble_sort(L):
 
 ### 快速排序 (Quick sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/快速排序.gif)
 
 快速排序的基本思想：挖坑填数+分治法
 
@@ -235,7 +235,7 @@ def quick_sort(L, start, end):
 
 ### 归并排序 (Merge sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/归并排序.gif)
 
 1. 归并排序是建立在归并操作上的一种有效的排序算法，该算法是采用分治法的一个典型的应用。它的基本操作是：将已有的子序列合并，达到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。
 2. 归并排序其实要做两件事：
@@ -302,7 +302,7 @@ def merge_sort_array(L):
 
 ### 基数排序 (Radix sort)
 
-![](https://github.com/Lisanaaa/thinking_in_lc/blob/master/images/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F.gif)
+![](/images/SortingAlgorithm/基数排序.gif)
 
 1. 基数排序：通过序列中各个元素的值，对排序的N个元素进行若干趟的“分配”与“收集”来实现排序。
     - 分配：我们将L[i]中的元素取出，首先确定其个位上的数字，根据该数字分配到与之序号相同的桶中
