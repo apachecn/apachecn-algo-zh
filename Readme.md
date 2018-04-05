@@ -1,8 +1,8 @@
 ### Reference and Appreciation:
 
-1. [kamyu104的Github](https://github.com/kamyu104/LeetCode)
+1. [KrisYu的GItuhub](https://github.com/KrisYu/LeetCode-CLRS-Python)
 
-2. [KrisYu的GItuhub](https://github.com/KrisYu/LeetCode-CLRS-Python)
+2. [kamyu104的Github](https://github.com/kamyu104/LeetCode)
 
 3. [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 
