@@ -1,6 +1,6 @@
 # LeetCode 面试题
 
-## [八大算法算](/docs/SortingAlgorithm/README.md)
+## [八大排序算法](/docs/SortingAlgorithm/README.md)
 
 ![](/images/SortingAlgorithm/八大排序算法性能.png)
 
