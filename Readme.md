@@ -4,7 +4,7 @@
 
 ![](/images/SortingAlgorithm/八大排序算法性能.png)
 
-| 名称 | 文档 | 代码 |
+| 名称 | 动图 | 代码 |
 | --- | --- | --- |
 | 冒泡排序 | ![](/images/SortingAlgorithm/冒泡排序.gif) | [BubbleSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/BubbleSort.py) |
 | 插入排序 | ![](/images/SortingAlgorithm/直接插入排序.gif) | [InsertSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/InsertSort.py) |
@@ -20,7 +20,7 @@
 * [pocketgems 面试题](/docs/interview/pocketgems/pocketgems.md)
 * [WePay 面试题](/docs/interview/WePay/WePay.md)
 
-## LeetCode算法题
+## LeetCode算法题
 
 * [](docs/LeetCode/001._two_sum.md)
 * [](/docs/LeetCode/002._add_two_numbers.md)
