@@ -1,4 +1,4 @@
-# LeetCode 面试题
+# Algorithms
 
 ## [八大排序算法](/docs/SortingAlgorithm/README.md)
 
@@ -20,7 +20,7 @@
 * [pocketgems 面试题](/docs/interview/pocketgems/pocketgems.md)
 * [WePay 面试题](/docs/interview/WePay/WePay.md)
 
-## LeetCode算法题
+## LeetCode Solutions and Summarizations
 
 * [](docs/某类别/001._two_sum.md)
 * [](/docs/某类别/002._add_two_numbers.md)
