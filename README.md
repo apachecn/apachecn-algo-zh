@@ -1,15 +1,15 @@
 # Algorithms
 
-## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/)
+## [LeetCode 题解和总结](/docs/Leetcode_Solutions/)
 
-## 2. [面试问答]()
+## [面试问答](/docs/Interview/)
 
 * [Google 面试题](/docs/interview/Google/Google.md)
 * [pocketgems 面试题](/docs/interview/pocketgems/pocketgems.md)
 * [WePay 面试题](/docs/interview/WePay/WePay.md)
 * [拍拍贷面试题](/docs/interview/拍拍贷/paipaidai.md)
 
-## 3. [算法模版](/docs/Algorithm_Templates)
+## [算法模版](/docs/Algorithm_Templates/)
 
 
 ## 推荐的一些LeetCode网站
