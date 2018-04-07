@@ -309,6 +309,6 @@
 10. [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
 
 
-### Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and imrpoved to reflect our knowledge, wisdom and effort.
+### Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
  - 💪就是干！
