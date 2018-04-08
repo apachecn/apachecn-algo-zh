@@ -7,13 +7,13 @@
 # range会产生list存在memory中，xrange更像是生成器，generate on demand所以有的时候xrange会更快
 
 # 3. python处理矩阵
-row  = len(matrix)
-col = len(matrix[0]) if row else 0 
-# 这样写通用的原因是， 当matrix = [], row = 0, col =0
+row = len(matrix)
+col = len(matrix[0]) if row else 0
+# 这样写通用的原因是， 当matrix = [], row = 0, col = 0
 
 # 4. python列表生成式
 lst = [0 for i in range(3)] # lst = [0,0,0]
-lst  = [[0 for i in range(3)] for j in range(2)]  # lst =  [[0, 0, 0], [0, 0, 0]]
+lst = [[0 for i in range(3)] for j in range(2)]  # lst =  [[0, 0, 0], [0, 0, 0]]
 # 下面这种写法危险：
 # lst1 = [ 0, 0, 0 ]
 # lst2  = [lst1] * 2  # lst2 = [ [0,0,0] , [0,0,0] ]
@@ -24,18 +24,18 @@ lst  = [[0 for i in range(3)] for j in range(2)]  # lst =  [[0, 0, 0], [0,
 # 如果这个key 没有在dict里面，给它一个默认值：
 D = {}
 if 1 in D:
-  val = D[1]
+  val = D[1]
 else :
-  val = 0
+  val = 0
 # 等同于这样写：
 val = D.get(1, 0)
 
 # 6. 字典赋值
 if key in D:
-  D[key].append(1)
+  D[key].append(1)
 else :
-  D[key] = []
-  
+  D[key] = []
+
 # 7. 字符串反转
 # python字符串没有reverse函数，只能str[::-1]
 string[::-1]
@@ -86,6 +86,6 @@ while True:
     print('\r%s' % ''.join(fancy_loading))
     fancy_loading.rotate(1)
     sys.stdout.flush()
-    time.sleep(0.08) 
+    time.sleep(0.08)
 
 # 11. 用yield 不用return，可以返回一个generator
