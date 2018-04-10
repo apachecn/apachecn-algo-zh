@@ -160,9 +160,11 @@ public class Test4 {
 
 ## 13. HashMap实现原理
 具体原理参考文章：
-- http://zhangshixi.iteye.com/blog/672697
-- http://www.admin10000.com/document/3322.html
+- http://zhangshixi.iteye.com/blog/672697 
 经典文章！！！
+- http://www.admin10000.com/document/3322.html 
+经典文章！！！
+
 
 ## 14. HashTable实现原理
 具体原理参考文章：
