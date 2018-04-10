@@ -31,7 +31,7 @@
 - 重载：发生在同一个类中，方法名必须相同，参数类型、个数或者顺序不同，方法返回值和访问修饰符可以不同，发生在编译时。
 - 重写：发生在父子类中，方法名、参数列表必须相同，返回值小于等于父类，抛出的异常小于等于父类，访问修饰符大于等于父类；如果父类方法访问修饰符为private则子类中就不是重写。
 
-# 4. 构造器Constructor是否可被override
+## 4. 构造器Constructor是否可被override
 构造器不能被重写，不能用static修饰构造器，只能用public，private，protected这三个权限修饰符，且不能有返回语句。
 1. 构造器与类同名 （构造函数，initilize 函数）
 2. 每个类可以有一个以上的构造器
@@ -40,7 +40,7 @@
 5. 构造器总是伴随着new操作符一起调用
 6. 构造器不可被继承
 
-# 5. 访问控制符public,protected,private,以及默认的区别
+## 5. 访问控制符public,protected,private,以及默认的区别
 
 |                    |   任意地方   | 同一个包 |  子类  | 同一个类 |
 | :----------------: | :------: | :--: | :--: | :--: |
@@ -56,10 +56,10 @@
 - private（类访问权限）: 只有在本类中才能访问；
 （只限在Java语言中……）
 
-# 6. 是否可以继承String类
+## 6. 是否可以继承String类
 String类是final类故不可以继承，一切由final修饰过的都不能继承。
 
-# 7. String和StringBuffer、StringBuilder的区别
+## 7. String和StringBuffer、StringBuilder的区别
 - 可变性
 
 String类中使用字符数组保存字符串，private final char value[]，所以string对象是不可变的。
@@ -69,11 +69,101 @@ StringBuilder与StringBuffer都继承自AbstractStringBuilder类，在AbstractSt
 
 String中的对象是不可变的，也就可以理解为常量，线程安全。
 AbstractStringBuilder是StringBuilder与StringBuffer的公共父类，定义了一些字符串的基本操作，如expandCapacity、append、insert、indexOf等公共方法。
-StringBuffer对方法加了同步锁或者对调用的方法加了同步锁，所以是***线程安全***的。
-StringBuilder并没有对方法进行加同步锁，所以是***非线程安全***的。
+StringBuffer对方法加了同步锁或者对调用的方法加了同步锁，所以是**线程安全**的。
+StringBuilder并没有对方法进行加同步锁，所以是**非线程安全**的。
 - 性能
 
 每次对 String 类型进行改变的时候，都会生成一个新的String 对象，然后将指针指向新的String 对象。StringBuffer每次都会对
 StringBuffer 对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用StirngBuilder 相比使用
-StringBuffer 仅能获得10%~15% 左右的性能提升，但却要冒多线程不安全的风险。
+StringBuffer 仅能获得10%~15% 左右的性能提升，但却要冒多线程不安全的风险。大多数情况下建议使用StirngBuilder。
 综合速度```String < StringBuffer < StirngBuilder```
+
+## 8. hashCode和equals方法的关系
+
+Java对象的eqauls方法和hashCode方法是这样规定的：
+
+1. 相等（相同）的对象必须具有相等的哈希码（或者散列码）。
+2. 如果两个对象的hashCode相同，它们并不一定相同。
+
+- 关于第一点，相等（相同）的对象必须具有相等的哈希码（或者散列码），为什么？
+
+ 想象一下，假如两个Java对象A和B，A和B相等（eqauls结果为true），但A和B的哈希码不同，则A和B存入HashMap时的哈希码计算得到的HashMap内部数组位置索引可能不同，那么A和B很有可能允许同时存入HashMap，显然相等/相同的元素是不允许同时存入HashMap，HashMap不允许存放重复元素。
+
+- 关于第二点，两个对象的hashCode相同，它们并不一定相同
+
+ 也就是说，不同对象的hashCode可能相同；假如两个Java对象A和B，A和B不相等（eqauls结果为false），但A和B的哈希码相等，将A和B都存入HashMap时会发生哈希冲突，也就是A和B存放在HashMap内部数组的位置索引相同这时HashMap会在该位置建立一个链接表，将A和B串起来放在该位置，显然，该情况不违反HashMap的使用原则，是允许的。当然，哈希冲突越少越好，尽量采用好的哈希算法以避免哈希冲突。
+ 
+ **注意⚠️**：在object类中，hashcode()方法是本地方法，返回的是对象的地址值，而object类中的equals()方法比较的也是两个对象的地址值，如果equals()相等，说明两个对象地址值也相等，当然hashcode()也就相等了；在String类中，equals()返回的是两个对象内容的比较，当两个对象内容相等时，Hashcode()方法根据String类的重写代码的分析，也可知道hashcode()返回结果也会相等。以此类推，可以知道Integer、Double等封装类中经过重写的equals()和hashcode()方法也同样适合于这个原则。当然没有经过重写的类，在继承了object类的equals()和hashcode()方法后，也会遵守这个原则。
+ 
+ 当集合要添加新的元素时，如果每增加一个元素就检查一次equals方法，那么当元素很多时，后添加到集合中的元素比较的次数就非常多了。也就是说，如果集合中现在已经有1000个元素，那么第1001个元素加入集合时，它就要调用1000次equals方法。这显然会大大降低效率。正确的做法是先调用这个元素的hashCode方法，就一下子能定位到它应该放置的物理位置上。如果这个位置上没有元素，它就可以直接存储在这个位置上，不用再进行任何比较了；如果这个位置上已经有元素了，就调用它的equals方法与新元素进行比较，相同的话就不存了，不相同就散列其它的地址。所以这里存在一个冲突解决的问题。这样一来实际调用equals方法的次数就大大降低了，几乎只需要一两次。 
+ 
+ ## 9. 抽象类和接口的区别
+- 语法层次
+
+抽象类和接口分别给出了不同的语法定义。
+- 设计层次
+
+抽象层次不同，抽象类是对类抽象，而接口是对行为的抽象。抽象类是对整个类整体进行抽象，包括属性、行为，但是接口却是对类局部（行为）进行抽象。抽象类是自底向上抽象而来的，接口是自顶向下设计出来的。
+- 跨域不同
+
+抽象类所体现的是一种继承关系，要想使得继承关系合理，父类和派生类之间必须存在"is-a"
+关系，即父类和派生类在概念本质上应该是相同的。对于接口则不然，并不要求接口的实现者和接口定义在概念本质上是一致的，仅仅是实现了接口定义的契约而已，"like-a" 或者 "can do a"的关系。
+
+## 10. 自动装箱与拆箱
+- 装箱：将基本类型用它们对应的引用类型包装起来；
+- 拆箱：将包装类型转换为基本数据类型；
+
+Java使用自动装箱和拆箱机制，节省了常用数值的内存开销和创建对象的开销，提高了效率，由编译器来完成，编译器会在编译期根据语法决定是否进行装箱和拆箱动作。
+
+## 11. 什么是泛型、为什么要使用以及类型擦除
+泛型，即“参数化类型”。
+创建集合时就指定集合元素的类型，该集合只能保存其指定类型的元素，避免使用强制类型转换。
+Java中的泛型基本上都是在编译器这个层次来实现的。在生成的Java字节码中是不包含泛型中的类型信息的。使用泛型的时候加上的类型参数，会在编译器在编译的时候去掉。这个过程就称为类型擦除。
+类型擦除的主要过程如下：
+- 1. 将所有的泛型参数用其最左边界（最顶级的父类型）类型替换。
+- 2. 移除所有的类型参数。
+
+```java
+public class Test4 {
+	public static void main(String[] args) {
+		ArrayList<String> arrayList1=new ArrayList<String>();
+		arrayList1.add("abc");
+		ArrayList<Integer> arrayList2=new ArrayList<Integer>();
+		arrayList2.add(123);
+		System.out.println(arrayList1.getClass()==arrayList2.getClass());
+	}
+}
+```
+
+在这个例子中，我们定义了两个ArrayList数组，不过一个是ArrayList<String>泛型类型，只能存储字符串。一个是ArrayList<Integer>泛型类型，只能存储整形。最后，我们通过arrayList1对象和arrayList2对象的getClass方法获取它们的类的信息，最后发现结果为true。说明泛型类型String和Integer都被擦除掉了，只剩下了**原始类型**。
+    
+```java
+public class Test4 {  
+    public static void main(String[] args) throws IllegalArgumentException, SecurityException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {  
+        ArrayList<Integer> arrayList3=new ArrayList<Integer>();  
+        arrayList3.add(1);//这样调用add方法只能存储整形，因为泛型类型的实例为Integer  
+        arrayList3.getClass().getMethod("add", Object.class).invoke(arrayList3, "asd");  
+        for (int i=0;i<arrayList3.size();i++) {  
+            System.out.println(arrayList3.get(i));  
+        }  
+    }  
+```
+
+在程序中定义了一个ArrayList泛型类型实例化为Integer的对象，如果直接调用add方法，那么只能存储整形的数据。不过当我们利用反射调用add方法的时候，却可以存储字符串。这说明了Integer泛型实例在编译之后被擦除了，只保留了**原始类型**。                                             
+
+## 12. Java中的集合类及关系图
+- List和Set继承自Collection接口。
+- Set无序不允许元素重复。HashSet和TreeSet是两个主要的实现类。
+- List有序且允许元素重复。ArrayList、LinkedList和Vector是三个主要的实现类。
+- Map也属于集合系统，但和Collection接口没关系。Map是key对value的映射集合，其中key列就是一个集合。key不能重复，但是value可以重复。HashMap、TreeMap和Hashtable是三个主要的实现类。
+- SortedSet和SortedMap接口对元素按指定规则排序，SortedMap是对key列进行排序。
+
+## 13. HashMap实现原理
+
+
+
+# References
+
+1. https://www.jianshu.com/p/1f1d3193d9e3
+2. https://blog.csdn.net/lonelyroamer/article/details/7868820
+3. https://blog.csdn.net/rmn190/article/details/1492013
