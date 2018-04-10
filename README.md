@@ -2,7 +2,7 @@
 
 ## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/)
 
-## 2. [面试问答](/docs/Interview/)
+## 2. [面试问答](/docs/interview/)
 
 * [Google 面试题](/docs/interview/Google/Google.md)
 * [pocketgems 面试题](/docs/interview/pocketgems/pocketgems.md)
