@@ -162,6 +162,7 @@ public class Test4 {
 具体原理参考文章：
 - http://zhangshixi.iteye.com/blog/672697
 - http://www.admin10000.com/document/3322.html
+经典文章！！！
 
 ## 14. HashTable实现原理
 具体原理参考文章：
@@ -173,13 +174,14 @@ public class Test4 {
 2. HashTable不允许null值(key和value都不可以) ；HashMap允许null值(key和value都可以)。
 3. HashTable有一个contains(Object value)功能和containsValue(Object value)功能一样。
 4. HashTable使用Enumeration进行遍历；HashMap使用Iterator进行遍历。
-5. HashTable中hash数组默认大小是11，增加的方式是old*2+1；HashMap中hash数组的默认大小是16，而且一定是2的指数。
-6. 哈希值的使用不同，HashTable直接使用对象的hashCode； HashMap重新计算hash值，而且用与代替求模。
+5. Hashtable的容量为任意正数（最小为1），而HashMap的容量始终为2的n次方。HashTable中hash数组默认大小是11，增加的方式是old*2+1；HashMap中hash数组的默认大小是16，而且一定是2的指数。
+6. 哈希值的使用不同，HashTable直接使用对象的hashCode； HashMap重新计算hash值，而且用 ```&``` 代替求模 ```%```。
+7. HashMap计算索引的方式是h&(length-1),而Hashtable用的是模运算，效率上是低于HashMap的。另外Hashtable计算索引时将hash值先与上0x7FFFFFFF,这是为了保证hash值始终为正数。
 
 
 
 
-## Todo: transient, volatile关键字
+## Todo: transient, volatile关键字, Fail-fast
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
 
