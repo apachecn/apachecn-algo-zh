@@ -33,3 +33,47 @@
 
 # 4. 构造器Constructor是否可被override
 构造器不能被重写，不能用static修饰构造器，只能用public，private，protected这三个权限修饰符，且不能有返回语句。
+1. 构造器与类同名 （构造函数，initilize 函数）
+2. 每个类可以有一个以上的构造器
+3. 构造器可以有0个，1个以及多个参数 （无参构造函数，有参构造函数）
+4. 构造器没有返回值（与void明显不同，构造器不会返回任何东西，你别无选择。）
+5. 构造器总是伴随着new操作符一起调用
+6. 构造器不可被继承
+
+# 5. 访问控制符public,protected,private,以及默认的区别
+
+|                    |   任意地方   | 同一个包 |  子类  | 同一个类 |
+| :----------------: | :------: | :--: | :--: | :--: |
+|  Public (接口访问权限)   |    🌈    |  🌈  |  🌈  |  🌈  |
+| Protected (继承访问权限) | 🌈(需要继承) |  🌈  |  🌈  |  🌈  |
+|  Default (包访问权限)   |          |  🌈  |  🌈  |  🌈  |
+|  Private (类访问权限)   |          |      |      |  🌈  |
+
+
+- public（接口访问权限）：任何地方都能访问；
+- protected（继承访问权限）: 介于public 和 private 之间的一种访问修饰符，一般称之为“保护形”。被其修饰的类、属性以及方法只能被类本身的方法及子类访问，即使子类在不同的包中也可以访问。在同包内的类及包外的子类能访问；
+- default（包访问权限）：即不加任何访问修饰符，通常称为“默认访问模式“。该模式下，只允许在同一个包中进行访问。 
+- private（类访问权限）: 只有在本类中才能访问；
+（只限在Java语言中……）
+
+# 6. 是否可以继承String类
+String类是final类故不可以继承，一切由final修饰过的都不能继承。
+
+# 7. String和StringBuffer、StringBuilder的区别
+- 可变性
+
+String类中使用字符数组保存字符串，private final char value[]，所以string对象是不可变的。
+StringBuilder与StringBuffer都继承自AbstractStringBuilder类，在AbstractStringBuilder中也是使用字符数组保存字符串，char[] value，
+这两种对象都是可变的。
+- 线程安全性
+
+String中的对象是不可变的，也就可以理解为常量，线程安全。
+AbstractStringBuilder是StringBuilder与StringBuffer的公共父类，定义了一些字符串的基本操作，如expandCapacity、append、insert、indexOf等公共方法。
+StringBuffer对方法加了同步锁或者对调用的方法加了同步锁，所以是***线程安全***的。
+StringBuilder并没有对方法进行加同步锁，所以是***非线程安全***的。
+- 性能
+
+每次对 String 类型进行改变的时候，都会生成一个新的String 对象，然后将指针指向新的String 对象。StringBuffer每次都会对
+StringBuffer 对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用StirngBuilder 相比使用
+StringBuffer 仅能获得10%~15% 左右的性能提升，但却要冒多线程不安全的风险。
+综合速度```String < StringBuffer < StirngBuilder```
