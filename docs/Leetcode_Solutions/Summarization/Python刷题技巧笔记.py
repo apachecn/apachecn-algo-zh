@@ -89,3 +89,8 @@ while True:
     time.sleep(0.08)
 
 # 11. 用yield 不用return，可以返回一个generator
+
+# 12. 符号～的巧妙应用
+for i in range(n):
+  # 这里的```[~i]``` 意思就是 ```[n-1-i]```
+  a[~i] = 1
