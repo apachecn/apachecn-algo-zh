@@ -214,14 +214,16 @@ Error类和Exception类的父类都是throwable类，他们的区别是：
 
 ## 21. Unchecked Exception 和 Checked Exception，各列举几个
 1. Unchecked Exception:
-	a. 指的是程序的瑕疵或逻辑错误，并且在运行时无法恢复。
-    b. Unchecked异常继承自java.lang.RuntimeException类, 包括Error与RuntimeException及其子类，如：OutOfMemoryError, UndeclaredThrowableException, IllegalArgumentException, IllegalMonitorStateException, NullPointerException, IllegalStateException, IndexOutOfBoundsException等。
-    c. unchecked异常则可以不必捕获或抛出, 语法上不需要声明抛出异常。
+
+	- 指的是程序的瑕疵或逻辑错误，并且在运行时无法恢复。
+	- Unchecked异常继承自java.lang.RuntimeException类, 包括Error与RuntimeException及其子类，如：OutOfMemoryError, UndeclaredThrowableException, IllegalArgumentException, IllegalMonitorStateException, NullPointerException, IllegalStateException, IndexOutOfBoundsException等。
+	- unchecked异常则可以不必捕获或抛出, 语法上不需要声明抛出异常。
 
 2. Checked Exception:
-    a. 代表程序不能直接控制的无效外界情况（如用户输入，数据库问题，网络异常，文件丢失等）
-    b. Checked异常继承java.lang.Exception类, 除了Error和RuntimeException及其子类之外，如：ClassNotFoundException, NamingException, ServletException, SQLException, IOException等。
-    c. Checked异常必须被显式地捕获或者传递, 需要try catch处理或throws声明抛出异常。
+
+    - 代表程序不能直接控制的无效外界情况（如用户输入，数据库问题，网络异常，文件丢失等）
+    - Checked异常继承java.lang.Exception类, 除了Error和RuntimeException及其子类之外，如：ClassNotFoundException, NamingException, ServletException, SQLException, IOException等。
+    - Checked异常必须被显式地捕获或者传递, 需要try catch处理或throws声明抛出异常。
 
 
 
