@@ -180,6 +180,37 @@ public class Test4 {
 6. 哈希值的使用不同，HashTable直接使用对象的hashCode； HashMap重新计算hash值，而且用 ```&``` 代替求模 ```%```。
 7. HashMap计算索引的方式是h&(length-1),而Hashtable用的是模运算，效率上是低于HashMap的。另外Hashtable计算索引时将hash值先与上0x7FFFFFFF,这是为了保证hash值始终为正数。
 
+## 16. ArrayList和vector区别
+1. ArrayList和Vector都实现了List接口，都是通过数组实现的。
+2. Vector是线程安全的，而ArrayList是非线程安全的。
+3. List第一次创建的时候，会有一个初始大小，随着不断向List中增加元素，当List 认为容量不够的时候就会进行扩容。Vector缺省情况下自动增长原来一倍的数组长度，ArrayList增长原来的50%。
+
+## 17. ArrayList和LinkedList区别及使用场景
+1. 区别
+
+    - ArrayList底层是用数组实现的，可以认为ArrayList是一个可改变大小的数组。随着越来越多的元素被添加到ArrayList中，其规模是动态增加的。
+    - LinkedList底层是通过双向链表实现的， LinkedList和ArrayList相比，增删的速度较快。但是查询和修改值的速度较慢。同时，LinkedList还实现了Queue接口，所以他还提供了offer(), peek(), poll()等方法。
+2. 使用场景
+
+    - LinkedList更适合从中间插入或者删除（链表的特性）。
+    - ArrayList更适合检索和在末尾插入或删除（数组的特性）。
+
+## 18. Collection和Collections的区别
+- java.util.Collection 是一个集合接口。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。
+- java.util.Collections 是一个包装类。它包含有各种有关集合操作的静态多态方法。此类不能实例化，就像一个工具类，服务于Java的Collection框架。
+
+## 19. Concurrenthashmap实现原理
+具体原理参考文章：
+- http://www.cnblogs.com/ITtangtang/p/3948786.html
+- http://ifeve.com/concurrenthashmap/
+
+## 20. Error、Exception区别
+Error类和Exception类的父类都是throwable类，他们的区别是：
+
+- Error类一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等。对于这类错误的导致的应用程序中断，仅靠程序本身无法恢复和和预防，遇到这样的错误，建议让程序终止。
+- Exception类表示程序可以处理的异常，可以捕获且可能恢复。遇到这类异常，应该尽可能处理异常，使程序恢复运行，而不应该随意终止异常。
+
+总结下来：Error类一般不能通过改代码处理，而Exception就是程序员改完代码基本就好了。
 
 
 
