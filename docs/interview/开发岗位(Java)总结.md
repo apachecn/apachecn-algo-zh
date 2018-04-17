@@ -225,7 +225,9 @@ Error类和Exception类的父类都是throwable类，他们的区别是：
     - Checked异常继承java.lang.Exception类, 除了Error和RuntimeException及其子类之外，如：ClassNotFoundException, NamingException, ServletException, SQLException, IOException等。
     - Checked异常必须被显式地捕获或者传递, 需要try catch处理或throws声明抛出异常。
 
-
+## 22. Java中如何实现代理机制(JDK、CGLIB)
+- JDK动态代理：代理类和目标类实现了共同的接口，用到InvocationHandler接口。
+- CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接口。
 
 ## Todo: transient, volatile关键字, Fail-fast
 https://www.cnblogs.com/dolphin0520/p/3920373.html
