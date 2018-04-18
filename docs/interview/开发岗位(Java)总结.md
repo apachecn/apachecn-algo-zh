@@ -229,6 +229,9 @@ Error类和Exception类的父类都是throwable类，他们的区别是：
 - JDK动态代理：代理类和目标类实现了共同的接口，用到InvocationHandler接口。
 - CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接口。
 
+## 23. 多线程的实现方式
+继承Thread类、实现Runnable接口、使用ExecutorService、Callable、Future实现有返回结果的多线程。
+
 ## Todo: transient, volatile关键字, Fail-fast
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
