@@ -5,10 +5,10 @@
 ## 2. [面试问答](/docs/interview/)
 
 * [面试总结](https://github.com/apachecn/LeetCode/blob/master/docs/interview/%E5%BC%80%E5%8F%91%E5%B2%97%E4%BD%8D(Java)%E6%80%BB%E7%BB%93.md)
-* [Google 面试题](/docs/interview/Google/Google.md)
-* [pocketgems 面试题](/docs/interview/pocketgems/pocketgems.md)
-* [WePay 面试题](/docs/interview/WePay/WePay.md)
-* [拍拍贷面试题](/docs/interview/拍拍贷/paipaidai.md)
+* [Google 面试题](/docs/Interview/Google/Google.md)
+* [pocketgems 面试题](/docs/Interview/pocketgems/pocketgems.md)
+* [WePay 面试题](/docs/Interview/WePay/WePay.md)
+* [PPd面试题](/docs/Interview/拍拍贷/paipaidai.md)
 
 ## 3. [算法模版](/docs/Algorithm_Templates/)
 
