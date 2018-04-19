@@ -232,6 +232,10 @@ Error类和Exception类的父类都是throwable类，他们的区别是：
 ## 23. 多线程的实现方式
 继承Thread类、实现Runnable接口、使用ExecutorService、Callable、Future实现有返回结果的多线程。
 
+## 24. 线程的状态转换
+![](https://github.com/apachecn/LeetCode/blob/master/images/%E7%BA%BF%E7%A8%8B%E8%BD%AC%E6%8D%A2.jpg)
+
+
 ## Todo: transient, volatile关键字, Fail-fast
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
