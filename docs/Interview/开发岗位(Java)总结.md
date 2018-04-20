@@ -358,12 +358,13 @@ synchronized关键字是防止多个线程同时执行一段代码，那么就�
 下面列举几个Java中使用volatile的几个场景:
 - 状态标记量
 - double-check（单例模式）
+
   
   
 [原文链接](https://www.cnblogs.com/dolphin0520/p/3920373.html)
 
 
-## Todo: Fail-fast
+## Todo: Fail-fast, spring ioc, rpc, 多线程，线程池，mybatis #和$的区别，concurrentHashmap，linkedhashmap，socket，redis原理
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
 ## 
