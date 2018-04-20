@@ -235,11 +235,138 @@ Error类和Exception类的父类都是throwable类，他们的区别是：
 ## 24. 线程的状态转换
 ![](https://github.com/apachecn/LeetCode/blob/master/images/%E7%BA%BF%E7%A8%8B%E8%BD%AC%E6%8D%A2.jpg)
 
+## 25. 双重检查单例模式
+ 一些人总结出来用来解决特定问题的固定的解决方案。
+ 
+解决一个类在内存中只存在一个对象，想要保证对象的唯一。
+1 为了避免其他程序过多的建立该类对象。禁止其他程序建立该类对象。
+2 为了其他程序可以访问该类对象，在本类中自定义一个对象。
+3 方便其他程序对自定义类的对象的访问，对外提供一些访问方式。
+ 
+单例设计模式的需求
 
-## Todo: transient, volatile关键字, Fail-fast
+代码：
+1将构造函数私有化
+2在类中创建一个私有的本类对象
+3提供一个用类名调用的公有方法获取该对象。
+```java
+class Single {
+
+	private static Single s = new Single(); // 饿汉式
+
+	private Single() {
+
+	}
+
+	public static Single getInstance() {
+		return s;
+	}
+}
+```
+懒汉模式 – 通常被称为延迟加载。注意存在线程安全问题.
+```java
+class Single2 {
+	private static Single2 s = null; // 懒汉式（线程不安全）
+
+    	private Single2() {
+
+	}
+
+	public static Single2 getInstance() {
+		if (s == null) {
+			s = new Single2();
+		}
+		return s;
+	}
+}
+```
+
+//但是懒汉单例模式会有线程安全问题，如果，小明先拿到了cpu的使用权，判断了一下s是null，正准备创建一个新的single对象的时候，大明抢到了cpu使用权，然后大明成功创建了一个新的single对象s1，此时小明重新抢回使用权，他不会再重新判断对象是否存在了，而是直接创建一个新的single对象s2，所以这个时候就会有两个single对象被创建了，就不是单例了，所以这就是懒汉单例模式会出现的线程安全问题。怎么解决呢，加一个锁就可以了。
+```java
+class Single2 {
+	private static Single2 s = null; 
+// 改进懒汉式（线程安全，效率不高，两次判断）
+
+    	private Single2() {
+
+	}
+
+	public static Single2 getInstance() {
+     synchronized("锁"){
+		 if (s == null) {
+			 s = new Single2();
+		 }
+      }
+	  return s;
+	}
+}
+
+//但是加上锁之后，这个时候每次都要判断一次锁的状态和s的状态，两次判断效率不高，所以怎么解决呢，在外层再加上一层判断，可以大大提高效率。
+class Single2 {
+	private static Single2 s = null; 
+// 改进懒汉式（线程安全，效率高，一次判断）
+
+    	private Single2() {
+
+	}
+
+	public static Single2 getInstance() {
+        if (s == null) {
+             synchronized("锁"){
+		         if (s == null) {
+			         s = new Single2();
+		         }
+              }
+}
+		return s;
+	}
+}
+
+```
+
+## 26. transient关键字
+我们都知道一个对象只要实现了Serilizable接口，这个对象就可以被序列化，java的这种序列化模式为开发者提供了很多便利，我们可以不必关系具体序列化的过程，只要这个类实现了Serilizable接口，这个类的所有属性和方法都会自动序列化。
+
+然而在实际开发过程中，我们常常会遇到这样的问题，这个类的有些属性需要序列化，而其他属性不需要被序列化，打个比方，如果一个用户有一些敏感信息（如密码，银行卡号等），为了安全起见，不希望在网络操作（主要涉及到序列化操作，本地序列化缓存也适用）中被传输，这些信息对应的变量就可以加上transient关键字。换句话说，这个字段的生命周期仅存于调用者的内存中而不会写到磁盘里持久化。
+
+总之，java 的transient关键字为我们提供了便利，你只需要实现Serilizable接口，将不需要序列化的属性前添加关键字transient，序列化对象的时候，这个属性就不会序列化到指定的目的地中。
+
+1. 一旦变量被transient修饰，变量将不再是对象持久化的一部分，该变量内容在序列化后无法获得访问。
+2. transient关键字只能修饰变量，而不能修饰方法和类。注意，本地变量是不能被transient关键字修饰的。变量如果是用户自定义类变量，则该类需要实现Serializable接口。
+3. 被transient关键字修饰的变量不再能被序列化，一个静态变量不管是否被transient修饰，均不能被序列化。
+
+第三点确实没错（一个静态变量不管是否被transient修饰，均不能被序列化），反序列化后类中static型变量username的值为当前JVM中对应static变量的值，这个值是JVM中的不是反序列化得出的
+
+我们知道在Java中，对象的序列化可以通过实现两种接口来实现，若实现的是Serializable接口，则所有的序列化将会自动进行，若实现的是Externalizable接口，则没有任何东西可以自动序列化，需要在writeExternal方法中进行手工指定所要序列化的变量，这与是否被transient修饰无关。
+
+[原文链接](http://www.cnblogs.com/lanxuezaipiao/p/3369962.html)
+
+## 27. volatile关键字
+
+一旦一个共享变量（类的成员变量、类的静态成员变量）被volatile修饰之后，那么就具备了两层语义：
+
+1. 保证了不同线程对这个变量进行操作时的可见性，即一个线程修改了某个变量的值，这新值对其他线程来说是立即可见的。
+2. 禁止进行指令重排序。
+
+synchronized关键字是防止多个线程同时执行一段代码，那么就会很影响程序执行效率，而volatile关键字在某些情况下性能要优于synchronized，但是要注意volatile关键字是无法替代synchronized关键字的，因为volatile关键字无法保证操作的原子性。通常来说，使用volatile必须具备以下2个条件：
+
+1. 对变量的写操作不依赖于当前值
+2. 该变量没有包含在具有其他变量的不变式中
+
+实际上，这些条件表明，可以被写入 volatile 变量的这些有效值独立于任何程序的状态，包括变量的当前状态。
+事实上，我的理解就是上面的2个条件需要保证操作是原子性操作，才能保证使用volatile关键字的程序在并发时能够正确执行。
+下面列举几个Java中使用volatile的几个场景:
+- 状态标记量
+- double-check（单例模式）
+  
+  
+[原文链接](https://www.cnblogs.com/dolphin0520/p/3920373.html)
+
+
+## Todo: Fail-fast
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
-
+## 
 
 
 
