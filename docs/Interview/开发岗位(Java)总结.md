@@ -358,10 +358,25 @@ synchronized关键字是防止多个线程同时执行一段代码，那么就�
 下面列举几个Java中使用volatile的几个场景:
 - 状态标记量
 - double-check（单例模式）
-
-  
   
 [原文链接](https://www.cnblogs.com/dolphin0520/p/3920373.html)
+
+
+## 28. 强制缓存和协商缓存
+1. 强制缓存是浏览器根据缓存有效期Expires:绝对时间和Cach-Control:max-age:相对时间，来计算内容是否过期，没过期直接使用缓存
+2. 协商缓存是强制缓存阶段判断过期了，再与服务器沟通，让服务器判定资源是否过期，未过期返回304状态码，过期了返回200，响应体里返回相应资源
+
+- If-Modified-Since:服务器上次返回的Last-Modified值
+- If-None-Match:服务器上次返回的Etag值
+
+- **Q1:**有了Expires为什么还要Cache-Control:max-age?
+
+Expires返回的是绝对时间，绝对时间有偏差（个人觉得可能时区不一样，服务器返回的时间到了浏览器可能已经是过去两小时的时间了，于是引入max-age相对时间，让浏览器根据自己的时间判定）
+
+- **Q2:**有了If-Modified-Since为什么还要If-None-Match?
+
+If-Modified-Since返回的是资源最后修改时间，想象一下打开文件，Ctrl+S保存一下，这文件的修改时间就变了，但是内容并没有变，于是引入If-None-Match,值为服务器上次返回的Etag值，Etag值是对文件内容进行哈希得到的值，内容不变，值不变。将这两个字段发给服务器，让服务器自己判决。
+
 
 
 ## Todo: Fail-fast, spring ioc, rpc, 多线程，线程池，mybatis #和$的区别，concurrentHashmap，linkedhashmap，socket，redis原理
