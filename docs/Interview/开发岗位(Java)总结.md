@@ -395,12 +395,12 @@ http://www.360doc.com/content/15/0116/21/12385684_441408260.shtml
 ## 32. servelet生命周期
 Servlet 生命周期：Servlet 加载--->实例化--->服务--->销毁。
 
-三个方法:
+**三个方法**:
 1. init()
 2. service()
 3. destroy()
 
-八大步骤：
+**八大步骤**：
 1. Web Client 向Servlet容器（Tomcat）发出Http请求
 2. Servlet容器接收Web Client的请求
 3. Servlet容器创建一个HttpRequest对象，将Web Client请求的信息封装到这个对象中。
