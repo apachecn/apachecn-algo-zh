@@ -411,6 +411,7 @@ Servlet 生命周期：Servlet 加载--->实例化--->服务--->销毁。
 8. Servlet容器把HttpServlet的响应结果传给Web Client。
 
 
+
 ## Todo: Fail-fast, rpc, 多线程，线程池，，linkedhashmap，socket，redis原理
 https://www.cnblogs.com/dolphin0520/p/3920373.html
 
