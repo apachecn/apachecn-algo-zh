@@ -25,6 +25,7 @@
 8. [HiredInTech](https://www.hiredintech.com/) System Design 的总结特别适合入门
 9. [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
 10. [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
+11. [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
 
 
 ### Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
