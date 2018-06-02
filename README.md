@@ -1,8 +1,8 @@
 # Algorithms
 
-## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/)
+## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/Python)
 
-## 2. [算法模版](/docs/Algorithm_Templates/)
+## 2. [算法模版](/docs/Algorithm_Templates/Python)
 
 
 ## 推荐的一些LeetCode网站
