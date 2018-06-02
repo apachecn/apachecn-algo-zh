@@ -2,15 +2,7 @@
 
 ## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/)
 
-## 2. [面试问答](/docs/Interview/)
-
-* [面试总结](https://github.com/apachecn/LeetCode/blob/master/docs/Interview/%E5%BC%80%E5%8F%91%E5%B2%97%E4%BD%8D(Java)%E6%80%BB%E7%BB%93.md)
-* [Google 面试题](/docs/Interview/Google/Google.md)
-* [pocketgems 面试题](/docs/Interview/pocketgems/pocketgems.md)
-* [WePay 面试题](/docs/Interview/WePay/WePay.md)
-* [PPd面试题](/docs/Interview/PPd/ppd.md)
-
-## 3. [算法模版](/docs/Algorithm_Templates/)
+## 2. [算法模版](/docs/Algorithm_Templates/)
 
 
 ## 推荐的一些LeetCode网站
