@@ -3,9 +3,14 @@
 * 英文官网: https://leetcode.com
 * 中文官网: https://leetcode-cn.com
 
-## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/Python)
+## 1.LeetCode 习题集合
 
-## 2. [算法模版](/docs/Algorithm_Templates/Python)
+* [LeetCode 习题集合](/docs/Leetcode_Solutions)
+
+## 2.算法 集合
+
+* [算法 集合](/docs/Algorithm)
+* [八大排序算法 集合](/docs/Algorithm/Sort)
 
 ## 推荐的一些LeetCode网站
 
