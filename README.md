@@ -28,4 +28,4 @@
 
 ### Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
- - 💪就是干！
+ - 💪 就是干！
