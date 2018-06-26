@@ -10,7 +10,7 @@
 
 ## 推荐的一些LeetCode网站
 
-1. [KrisYu的GItuhub](https://github.com/KrisYu/LeetCode-CLRS-Python)
+1. [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
 2. [kamyu104的Github](https://github.com/kamyu104/LeetCode)
 3. [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 4. [Leetcode 讨论区](https://discuss.leetcode.com/)
