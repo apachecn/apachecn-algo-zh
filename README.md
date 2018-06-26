@@ -1,11 +1,16 @@
-# Algorithms
+# LeetCode 面试必备
 
 * 英文官网: https://leetcode.com
 * 中文官网: https://leetcode-cn.com
 
-## 1. [LeetCode 题解和总结](/docs/Leetcode_Solutions/Python)
+## 1.LeetCode 习题集合
 
-## 2. [算法模版](/docs/Algorithm_Templates/Python)
+* [LeetCode 习题集合](/docs/Leetcode_Solutions)
+
+## 2.算法 集合
+
+* [算法 集合](/docs/Algorithm)
+* [八大排序算法 集合](/docs/Algorithm/Sort)
 
 ## 推荐的一些LeetCode网站
 
@@ -27,12 +32,14 @@
 
 ## 项目贡献者
 
-> 项目创始人
+> 项目发起人
 
 * [@Lisanaaa](https://github.com/Lisanaaa)
+* [@片刻](https://github.com/jiangzhonglian)
 
 > 贡献者（欢迎大家来追加）
 
+* [@Lisanaaa](https://github.com/Lisanaaa)
 * [@片刻](https://github.com/jiangzhonglian)
 
 ## 免责声明
