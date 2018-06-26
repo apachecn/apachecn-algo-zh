@@ -35,9 +35,11 @@
 > 项目发起人
 
 * [@Lisanaaa](https://github.com/Lisanaaa)
+* [@片刻](https://github.com/jiangzhonglian)
 
 > 贡献者（欢迎大家来追加）
 
+* [@Lisanaaa](https://github.com/Lisanaaa)
 * [@片刻](https://github.com/jiangzhonglian)
 
 ## 免责声明
