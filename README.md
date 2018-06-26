@@ -27,7 +27,7 @@
 
 ## 项目贡献者
 
-> 项目创始人
+> 项目发起人
 
 * [@Lisanaaa](https://github.com/Lisanaaa)
 
