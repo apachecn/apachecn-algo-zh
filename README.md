@@ -11,6 +11,7 @@
 
 * [算法 集合](/docs/Algorithm)
 * [八大排序算法 集合](/docs/Algorithm/Sort)
+* [Wikipedia: List of Algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
 
 ## 推荐的一些LeetCode网站
 
@@ -25,6 +26,7 @@
 9. [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
 10. [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
 11. [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
+12. [剑指 Offer 题解](https://github.com/gatieme/CodingInterviews)
 
 ### Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
