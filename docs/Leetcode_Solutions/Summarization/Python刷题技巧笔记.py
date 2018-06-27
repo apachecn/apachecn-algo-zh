@@ -1,3 +1,4 @@
+from __future__ import print_function
 # python有无数奇技淫巧和许多人不知道的秘密，这里用简洁的语言一条条表述出来，不断更新, 大家一起贡献！
 
 # 1. python 排序

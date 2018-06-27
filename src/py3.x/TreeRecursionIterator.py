@@ -1,5 +1,6 @@
 # coding:utf8
 
+from __future__ import print_function
 class Node():
     def __init__(self, value, left=None, right=None):
         self.value = value
@@ -10,7 +11,7 @@ def midRecusion(node):
     if node is None:
         return
     midRecusion(node.left)
-    print node.value,
+    print(node.value, end=' ')
     midRecusion(node.right)
 
 def midIterator(node):
@@ -21,7 +22,7 @@ def midIterator(node):
             node = node.left
         else:
             node = stack.pop(-1)
-            print node.value,
+            print(node.value, end=' ')
             node = node.right
 
 if __name__ == "__main__":
