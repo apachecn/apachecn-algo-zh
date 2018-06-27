@@ -4,6 +4,7 @@
 迭代使用的是循环结构。
 递归使用的是选择结构。
 '''
+from __future__ import print_function
 
 # 递归求解
 def calculate(l):
