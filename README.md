@@ -20,15 +20,16 @@
 
 ## 模版要求
 
-> 基本要求（提交PR前）
+> 提交PR基本要求（满足任意一种即可）
 
-* 要不：有不一样的思路
-* 要不：优化时间复杂度和空间复杂度
-* 要不：简化代码
+* 1. 不一样的思路
+* 2. 优化时间复杂度和空间复杂度，或者解决题目的Follow up
+* 3. 有意义的简化代码
+* 4. 未提交过的题目
 
 > **案例模版**
 
-[模版：1. Two Sum 两数之和](/docs/Leetcode_Solutions/001._two_sum.md)
+[模版：007. Reverse Integer 反转整数](/docs/Leetcode_Solutions/007._Reverse_Integer.md)
 
 ## 推荐 LeetCode 网站
 
