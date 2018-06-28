@@ -2,6 +2,7 @@
 
 
 # 冒泡排序
+from __future__ import print_function
 def bubble_sort(l):
     length = len(l)
     # 外层循环 length遍，内层循环少一遍
@@ -16,4 +17,4 @@ def bubble_sort(l):
 if __name__ == "__main__":
     l = [5, 1, 9, 3, 2, 7]
     bubble_sort(l)
-    print l
+    print(l)

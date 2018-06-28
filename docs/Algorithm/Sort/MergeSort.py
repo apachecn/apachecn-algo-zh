@@ -1,6 +1,7 @@
 # coding: utf-8
 
 
+from __future__ import print_function
 def MergeSort(lists):
     if len(lists) <= 1:
         return lists
@@ -8,10 +9,10 @@ def MergeSort(lists):
     # 从中间，进行数据的拆分, 递归的返回数据进行迭代排序
     left = MergeSort(lists[:num])
     right = MergeSort(lists[num:])
-    print left
-    print "*" * 20
-    print right
-    print "_" * 20
+    print(left)
+    print("*" * 20)
+    print(right)
+    print("_" * 20)
     return Merge(left, right)
 
 
@@ -27,9 +28,9 @@ def Merge(left, right):
             r += 1
     result += right[r:]
     result += left[l:]
-    print 'result:', result
+    print('result:', result)
     return result
 
 
 if __name__ == "__main__":
-    print MergeSort([1, 2, 3, 4, 5, 6, 7, 90, 21, 23, 45])
+    print(MergeSort([1, 2, 3, 4, 5, 6, 7, 90, 21, 23, 45]))

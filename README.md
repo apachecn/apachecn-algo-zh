@@ -49,7 +49,8 @@
 14. https://github.com/liuchuo/LeetCode
 15. https://github.com/anxiangSir/SwordforOffer
 16. https://www.nowcoder.com/ta/coding-interviews?page=1
-17. 【小姐姐】刷题博客：https://www.liuchuo.net/about
+17. [【小姐姐】刷题博客](https://www.liuchuo.net/about)
+18. [公瑾的Github](https://github.com/yuzhoujr/leetcode)
 
 > Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 

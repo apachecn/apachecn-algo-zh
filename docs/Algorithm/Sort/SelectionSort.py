@@ -5,6 +5,7 @@
 选择排序的前提是：找到最大值的位置，最后才进行1次交换
 而冒泡排序：相邻的值进行交换，一共进行n次交换
 """
+from __future__ import print_function
 
 
 def selection_sort(l):
@@ -17,12 +18,12 @@ def selection_sort(l):
             if l[j] > l[index]:
                 index = j
         l[length], l[index] = l[index], l[length]
-        print len(l) - length, l
+        print(len(l) - length, l)
         length -= 1
 
 
 if __name__ == "__main__":
     l = [5, 1, 9, 3, 2, 7]
-    print l
+    print(l)
     selection_sort(l)
     print("result: " + str(l))
