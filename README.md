@@ -7,7 +7,6 @@
 
 * **LeetCode 刷题群 | ApacheCN【812791932】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d390faa76fe789a0068dadae4ab9b0f0fc7997c38f216e9a30172866163a49d"><img border="0" src="/images/MainPage/ApacheCN-group.png" alt="LeetCode 刷题 | ApacheCN " title="LeetCode 刷题 | ApacheCN "></a>**
 * [<font color=green>ApacheCN repo 地址</font>](https://github.com/apachecn/leetcode): https://github.com/apachecn/leetcode
-* **<font color=green>ApacheCN 网友捐赠页面</font>：http://www.apachecn.org/organization/664.html**
 
 ## LeetCode 习题集合
 
@@ -73,6 +72,13 @@
 ApacheCN 纯粹出于学习目的与个人兴趣整理的内容。
 
 整理内容只供学习研究参考之用。ApacheCN 保留对此版本内容的署名权及其它相关权利。
+
+
+## 赞助我们
+
+* **<font color=green>ApacheCN 网友捐赠页面</font>：http://www.apachecn.org/organization/664.html**
+
+![](http://www.apachecn.org/wp-content/uploads/2018/02/%E6%94%AF%E4%BB%98-%E5%BE%AE%E4%BF%A1%E5%92%8C%E6%94%AF%E4%BB%98%E5%AE%9D-1024x591.png)
 
 ## [ApacheCN 组织资源](http://www.apachecn.org/)
 
