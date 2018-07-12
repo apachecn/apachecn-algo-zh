@@ -17,4 +17,4 @@ def bubble_sort(nums):
 if __name__ == "__main__":
     nums = [2, 6, 8, 5, 1, 4, 9, 3, 7]
     bubble_sort(nums)
-    print(nums)
+    print('result:', nums)
