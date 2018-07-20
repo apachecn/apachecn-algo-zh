@@ -52,6 +52,7 @@
 16. https://www.nowcoder.com/ta/coding-interviews?page=1
 17. [【小姐姐】刷题博客](https://www.liuchuo.net/about)
 18. [公瑾的Github](https://github.com/yuzhoujr/leetcode)
+19. [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
 
 > Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
