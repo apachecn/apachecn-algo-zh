@@ -60,6 +60,10 @@
 
 ## 项目贡献者
 
+> 项目基石
+
+* [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
+
 > 项目发起人
 
 * [@Lisanaaa](https://github.com/Lisanaaa)
