@@ -1,5 +1,5 @@
 # LeetCode 面试必备
-
+ - 💪 就是干！如果你觉得有帮助请点个star，谢谢！
 * [ApacheCN 开源组织](https://github.com/apachecn/organization): https://github.com/apachecn/organization
 
 > **欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远**
@@ -54,15 +54,14 @@
 18. [公瑾的Github](https://github.com/yuzhoujr/leetcode)
 19. [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
 
-> Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
-
- - 💪 就是干！如果你觉得有帮助请点个star，谢谢！
 
 ## 项目贡献者
 
 > 项目基石
 
 * [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
+
+> Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
 > 项目发起人
 
