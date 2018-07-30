@@ -61,7 +61,7 @@
 
 * [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
 
-> Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
+> Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python), and here is the [approve letter](https://github.com/apachecn/LeetCode/blob/master/images/Project%20cornerstone/approve%20letter.md). However, it has been modified, added and improved to reflect our knowledge, wisdom and effort.
 
 > 项目发起人
 
