@@ -53,6 +53,7 @@
 17. [【小姐姐】刷题博客](https://www.liuchuo.net/about)
 18. [公瑾的Github](https://github.com/yuzhoujr/leetcode)
 19. [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
+20. [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 
 
 ## 项目贡献者
