@@ -34,26 +34,25 @@
 
 ## 推荐 LeetCode 网站
 
-1. [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
-2. [kamyu104的Github](https://github.com/kamyu104/LeetCode)
-3. [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
-4. [Leetcode 讨论区](https://discuss.leetcode.com/)
-5. [visualgo算法可视化网站](https://visualgo.net/en)
-6. [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-7. [我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
-8. [HiredInTech](https://www.hiredintech.com/) System Design 的总结特别适合入门
-9. [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
-10. [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
-11. [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
-12. [剑指 Offer 题解](https://github.com/gatieme/CodingInterviews)
-13. https://algorithm.yuanbin.me/zh-hans
-14. https://github.com/liuchuo/LeetCode
-15. https://github.com/anxiangSir/SwordforOffer
-16. https://www.nowcoder.com/ta/coding-interviews?page=1
-17. [【小姐姐】刷题博客](https://www.liuchuo.net/about)
-18. [公瑾的Github](https://github.com/yuzhoujr/leetcode)
-19. [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
-20. [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
+- [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)
+- [kamyu104的Github](https://github.com/kamyu104/LeetCode)
+- [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
+- [Leetcode 讨论区](https://discuss.leetcode.com/)
+- [visualgo算法可视化网站](https://visualgo.net/en)
+- [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
+- [HiredInTech](https://www.hiredintech.com/) System Design 的总结特别适合入门
+- [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
+- [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
+- [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
+- [剑指 Offer 题解](https://github.com/gatieme/CodingInterviews)
+- https://github.com/liuchuo/LeetCode
+- https://github.com/anxiangSir/SwordforOffer
+- https://www.nowcoder.com/ta/coding-interviews?page=1
+- [【小姐姐】刷题博客](https://www.liuchuo.net/about)
+- [公瑾的Github](https://github.com/yuzhoujr/leetcode)
+- [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
+- [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 
 
 ## 项目贡献者
