@@ -30,7 +30,7 @@
 
 > **案例模版**
 
-[模版：007. Reverse Integer 反转整数](/docs/Leetcode_Solutions/007._Reverse_Integer.md)
+[模版：001. Two Sum 两数之和](https://github.com/apachecn/LeetCode/blob/master/docs/Leetcode_Solutions/001._two_sum.md)
 
 ## 推荐 LeetCode 网站
 
