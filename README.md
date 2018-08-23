@@ -9,9 +9,9 @@
 * **LeetCode 刷题群 | ApacheCN【812791932】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d390faa76fe789a0068dadae4ab9b0f0fc7997c38f216e9a30172866163a49d"><img border="0" src="/images/MainPage/ApacheCN-group.png" alt="LeetCode 刷题 | ApacheCN " title="LeetCode 刷题 | ApacheCN "></a>**
 * [<font color=green>ApacheCN repo 地址</font>](https://github.com/apachecn/leetcode): https://github.com/apachecn/leetcode
 
-## LeetCode 习题集合
+## LeetCode 题解
 
-* [LeetCode 习题集合](/docs/Leetcode_Solutions)
+* [LeetCode 题解](/docs/Leetcode_Solutions)
 
 ## 算法 汇总集合
 
