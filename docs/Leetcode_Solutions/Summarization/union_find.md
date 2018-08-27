@@ -226,7 +226,7 @@ class Solution(object):
             uf[x] = uf[uf[x]]
             x = uf[x]
 
-    return uf[x]
+        return uf[x]
 
     def union(self, x, y):  # 连接两个节点
         x_root = find(x)
