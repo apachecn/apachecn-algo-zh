@@ -205,7 +205,9 @@ find方法的效率就增加了，从而也就增加了整个Quick-Union算法�
 
 ```
 def find(self, x):  # 判断节点所属于的组
+	while x != uf[x]:
 	uf[x] = uf[uf[x]]
+		x = uf[x]
 	return uf[x]
 ```
 综上，我决定以后解决问题的时候用这个模版就行了：
