@@ -225,7 +225,6 @@ class Solution(object):
         while x != uf[x]:
             uf[x] = uf[uf[x]]
             x = uf[x]
-
         return uf[x]
 
     def union(self, x, y):  # 连接两个节点
