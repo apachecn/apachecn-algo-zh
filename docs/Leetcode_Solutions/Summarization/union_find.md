@@ -224,7 +224,7 @@ class Solution(object):
     def find(self, x):  # 判断节点所属于的组
         while x != uf[x]:
             uf[x] = uf[uf[x]]
-        x = uf[x]
+            x = uf[x]
 
     return uf[x]
 
