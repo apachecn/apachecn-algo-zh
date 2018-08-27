@@ -55,7 +55,7 @@ def uf(n)   # 初始化uf数组和组数目
 def union(x, y) # 连接两个节点
 def find(x) # 判断节点所属于的组
 def connected(x, y) # 判断两个节点是否联通
-def count(x) # 返回所有组的数目
+def count() # 返回所有组的数目
 ```
 
 注意其中使用整数来表示节点，如果需要使用其他的数据类型表示节点，比如使用字符串，那么可以用哈希表来进行映射，即将String映射成这里需要的Integer类型。
@@ -90,7 +90,7 @@ class Solution(object):
     def connected(self, x, y):  # 判断两个节点是否联通
         return find(x) == find(y)
     
-    def count(x):  # 返回所有组的数目
+    def count():  # 返回所有组的数目
         return count               
 ```
 
@@ -142,7 +142,7 @@ class Solution(object):
     def connected(self, x, y):  # 判断两个节点是否联通
         return find(x) == find(y)
     
-    def count(x):  # 返回所有组的数目
+    def count():  # 返回所有组的数目
         return count        
 ```
 
@@ -237,7 +237,7 @@ class Solution(object):
     def connected(self, x, y):  # 判断两个节点是否联通
         return find(x) == find(y)
 
-    def count(x):  # 返回所有组的数目
+    def count():  # 返回所有组的数目
         return count       
 ```
 至此，动态连通性相关的Union-Find算法基本上就介绍完了，从容易想到的Quick-Find到相对复杂但是更加高效的Quick-Union，然后到对Quick-Union的几项改进，
