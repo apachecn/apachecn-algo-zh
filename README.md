@@ -1,4 +1,4 @@
-# [LeetCode 面试必备]((/docs/Leetcode_Solutions))
+# [LeetCode 面试必备](/docs/Leetcode_Solutions)
  - 💪 就是干！如果你觉得有帮助请点个star，谢谢！
 * [ApacheCN 开源组织](https://github.com/apachecn/organization): https://github.com/apachecn/organization
 
