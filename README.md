@@ -1,19 +1,9 @@
-# [LeetCode 面试必备](/docs/Leetcode_Solutions)
- - 💪 就是干！如果你觉得有帮助请点个star，谢谢！
-* [ApacheCN 开源组织](https://github.com/apachecn/organization): https://github.com/apachecn/organization
-
-> **欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远**
-
-* 英文官网: https://leetcode.com
-* 中文官网: https://leetcode-cn.com
-* **LeetCode 刷题群 | ApacheCN【812791932】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d390faa76fe789a0068dadae4ab9b0f0fc7997c38f216e9a30172866163a49d"><img border="0" src="/images/MainPage/ApacheCN-group.png" alt="LeetCode 刷题 | ApacheCN " title="LeetCode 刷题 | ApacheCN "></a>**
-* [<font color=green>ApacheCN repo 地址</font>](https://github.com/apachecn/leetcode): https://github.com/apachecn/leetcode
-
+ - 💪 如果你觉得有帮助请点个star，谢谢！
 ## LeetCode 题解
 
 * [LeetCode 题解](/docs/Leetcode_Solutions)
 
-## 算法 汇总集合
+## 基础算法模版
 
 * [算法 汇总集合](/docs/Algorithm)
 * [八大排序算法 集合](/docs/Algorithm/Sort)
@@ -80,3 +70,12 @@
 ApacheCN 纯粹出于学习目的与个人兴趣整理的内容。
 
 整理内容只供学习研究参考之用。ApacheCN 保留对此版本内容的署名权及其它相关权利。
+
+* [ApacheCN 开源组织](https://github.com/apachecn/organization): https://github.com/apachecn/organization
+
+> **欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远**
+
+* 英文官网: https://leetcode.com
+* 中文官网: https://leetcode-cn.com
+* **LeetCode 刷题群 | ApacheCN【812791932】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d390faa76fe789a0068dadae4ab9b0f0fc7997c38f216e9a30172866163a49d"><img border="0" src="/images/MainPage/ApacheCN-group.png" alt="LeetCode 刷题 | ApacheCN " title="LeetCode 刷题 | ApacheCN "></a>**
+* [<font color=green>ApacheCN repo 地址</font>](https://github.com/apachecn/leetcode): https://github.com/apachecn/leetcode
