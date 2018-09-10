@@ -1,9 +1,6 @@
-from __future__ import print_function
 
-import heapq
-
-# python有无数奇技淫巧和许多人不知道的秘密，这里用简洁的语言一条条表述出来，不断更新, 大家一起贡献！
-
+### python有无数奇技淫巧和许多人不知道的秘密，这里用简洁的语言一条条表述出来，不断更新, 大家一起贡献！
+```
 # 1. python 排序
 # 用lst.sort() 而不是nlst = sorted(lst)， 区别在于lst.sort()是 in-place sort，改变lst, sorted会创建新list，成本比较高。
 
@@ -98,3 +95,4 @@ while True:
 for i in range(n):
   # 这里的```[~i]``` 意思就是 ```[n-1-i]```
   a[~i] = 1
+```
