@@ -43,11 +43,44 @@ else :
   D[key] = []
 ```
 ```python
-# 7. 字符串反转
+# 7. 字符串反转和列表反转
 # python字符串没有reverse函数，只能str[::-1]
 string[::-1]
 # python的list可以直接reverse()，因此也可以借用这个特性
 "".join([string].reverse())
+
+测试了一下3种列表反转的速度
+tmp = [i for i in range(100000)]
+
+import datetime
+starttime = datetime.datetime.now()
+
+for i in range(100000):
+    tmp = tmp[::-1]
+endtime = datetime.datetime.now()
+print((endtime - starttime))
+
+starttime = datetime.datetime.now()
+for i in range(100000):
+    tmp = list(reversed(tmp))
+endtime = datetime.datetime.now()
+print((endtime - starttime))
+
+starttime = datetime.datetime.now()
+for i in range(100000):
+    tmp.reverse()
+endtime = datetime.datetime.now()
+print((endtime - starttime))
+
+
+
+
+输出：
+0:00:33.486971
+0:01:43.027222
+0:00:03.958400
+
+说明in-place反转最快，但是这样改变了原list，因此在不能改动原list的情况下，我们用分片会更好
 ```
 ```python
 # 8. 快速统计
