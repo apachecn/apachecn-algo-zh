@@ -165,6 +165,7 @@ but for larger y, the result is calculated using Exp(y * Log(x)).
 
 sqrt()函数平常认为是O(lgn)的
 但是追溯到最底层，sqrt()就是O(1)的，详细见
+```
 1. [求平方根sqrt()函数的底层算法效率问题](http://www.nowamagic.net/algorithm/algorithm_EfficacyOfFunctionSqrt.php)
 2. [Time complexity of Math.Sqrt()?](https://stackoverflow.com/questions/34580158/time-complexity-of-math-sqrt)
-```
+
