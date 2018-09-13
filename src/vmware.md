@@ -60,6 +60,8 @@ if sums == 0:
 else:
     if sums <= W:
         print(1)
+    elif sums == N * W:
+        print(N)
     else:
         print(sums//W + 1)
 ```
