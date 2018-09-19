@@ -69,5 +69,10 @@ p, q, r = [int(i) for i in input().split()]
 s.cal_next(p, q, r, '')
 print(s.res)
 ```
-
+题目图片见下方：
+### 第一题
+![](https://github.com/apachecn/awesome-leetcode/blob/master/src/51CFCB8475F4ED5B1CAD5F23CF96887A.jpg)
+![](https://github.com/apachecn/awesome-leetcode/blob/master/src/B9A582497F833DDE4E93FA5BAA0BA4EB.jpg)
+### 第二题
+![](https://github.com/apachecn/awesome-leetcode/blob/master/src/5C3A0153C03FD214FE68B002903E2135.jpg)
 
