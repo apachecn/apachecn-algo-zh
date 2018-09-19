@@ -43,7 +43,7 @@ print(res)
 
 
 
-"""第二题"""
+"""第二题""" PS: 这题感谢算法群里的kkk大佬指点我
 
 class Solution(object):
     res = 0
