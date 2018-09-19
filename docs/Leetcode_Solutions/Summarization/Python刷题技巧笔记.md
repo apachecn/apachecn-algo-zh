@@ -174,5 +174,19 @@ sqrt()函数平常认为是O(lgn)的
 ```python
 # 15. python deque用法
 
+Operations on deque :
+
+1. append() :- This function is used to insert the value in its argument to the right end of deque.
+2. appendleft() :- This function is used to insert the value in its argument to the left end of deque.
+3. pop() :- This function is used to delete an argument from the right end of deque.
+4. popleft() :- This function is used to delete an argument from the left end of deque.
+5. index(ele, beg, end) :- This function returns the first index of the value mentioned in arguments, starting searching from beg till end index.
+6. insert(i, a) :- This function inserts the value mentioned in arguments(a) at index(i) specified in arguments.
+7. remove() :- This function removes the first occurrence of value mentioned in arguments.
+8. count() :- This function counts the number of occurrences of value mentioned in arguments.
+9. extend(iterable) :- This function is used to add multiple values at the right end of deque. The argument passed is an iterable.
+10. extendleft(iterable) :- This function is used to add multiple values at the left end of deque. The argument passed is an iterable. Order is reversed as a result of left appends.
+11. reverse() :- This function is used to reverse order of deque elements.
+12. rotate() :- This function rotates the deque by the number specified in arguments. If the number specified is negative, rotation occurs to left. Else rotation is to right.
 ```
 [Deque in Python](https://www.geeksforgeeks.org/deque-in-python/)
