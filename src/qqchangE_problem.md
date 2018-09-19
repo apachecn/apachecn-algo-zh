@@ -21,4 +21,8 @@ def canPartition(nums):
 
 
 print(canPartition([3, 3, 3, 4, 5]))
+
+
+output:
+True
 ```
