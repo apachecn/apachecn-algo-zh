@@ -42,4 +42,32 @@ res = tmp[0][1]+' ' + tmp[1][1]+' '+tmp[2][1]
 print(res)
 
 
+
+"""第二题"""
+
+class Solution(object):
+    res = 0
+    def cal_next(self, p, q, r, prev):
+        tmp = [p, q, r]
+        cur_max = max(tmp)
+        # 此时前面排好了且都满足，想要不相邻，数量最多的球中间的所有空格
+        # 必须小于或等于另外两个球的数量，否则说明此时排列不合法直接return
+        if cur_max - 1 > sum(tmp) - cur_max:  
+            return
+        if p == q == r == 0:
+            self.res += 1
+            return
+        if p > 0 and prev != 'p':
+            self.cal_next(p-1, q, r, 'p')
+        if q > 0 and prev != 'q':
+            self.cal_next(p, q-1, r, 'q')
+        if r > 0 and prev != 'r':
+            self.cal_next(p, q, r-1, 'r')
+
+s = Solution()
+p, q, r = [int(i) for i in input().split()]
+s.cal_next(p, q, r, '')
+print(s.res)
 ```
+
+
