@@ -1,5 +1,30 @@
 ```python
+一晚上做了好几家的，头疼，这些捞b公司贼烦
+
+我自己没有参加笔试，就是纯粹A着玩，纯属娱乐
+
 """百词斩第一题"""
+
+"""自我实现版本"""
+def get_time_diff(time1, time2):
+    res = 0
+    res += (int(time2[:2]) - int(time1[:2])) * 3600
+    res += (int(time2[3:5]) - int(time1[3:5])) * 60
+    res += int(time2[-2:]) - int(time1[-2:])
+    return res
+
+time1 = input()
+time2 = input()
+
+sec = get_time_diff(time1, time2)
+print(int(30*sec//3600))
+print(int(6*sec//60))
+print(int(sec*6))
+
+
+"""工业版本
+可惜笔试不支持
+"""
 
 from dateutil.parser import parse
 
@@ -16,11 +41,15 @@ print(int(6*sec//60))
 print(int(sec*6))
 
 
-
 """
 14:52:11
 21:41:14
+
+00:00:00
+18:00:00
 """
+
+"""百词斩第二题"""
 
 """百词斩第二题"""
 
