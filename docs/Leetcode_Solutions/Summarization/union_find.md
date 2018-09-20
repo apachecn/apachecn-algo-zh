@@ -239,6 +239,12 @@ class UnionFind(object):
     def count(self):  # 返回所有组的数目
         return self.count       
 ```
+### 时间复杂度分析
+- find()操作的时间复杂度最坏情况下为O(N)
+- union()操作的时间复杂度最坏情况下为O(1)
+
+Quick union的表现将随着我们不断调用union()构建联通集而变差。因为代表这个联通集的树越来越高，调用find()的开销也就越来越大。
+
 至此，动态连通性相关的Union-Find算法基本上就介绍完了，从容易想到的Quick-Find到相对复杂但是更加高效的Quick-Union，然后到对Quick-Union的几项改进，
 让我们的算法的效率不断的提高。
 
