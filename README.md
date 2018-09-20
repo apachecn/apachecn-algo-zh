@@ -1,4 +1,4 @@
- - 💪 如果你觉得有帮助请点个 star，谢谢！欢迎 Follow 我[一起装 C--](https://github.com/Lisanaaa)
+ - 💪 如果你觉得有帮助请点个 star，谢谢！欢迎 Follow 我的 [Github](https://github.com/Lisanaaa) ***一起装 C--***
 ## LeetCode 题解
 
 * [LeetCode 题解](/docs/Leetcode_Solutions)
