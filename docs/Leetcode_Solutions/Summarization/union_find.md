@@ -213,7 +213,7 @@ def find(self, x):  # 判断节点所属于的组
 综上，我决定以后解决问题的时候用这个模版就行了：
 
 ```python
-class Solution(object):
+class UnionFind(object):
     uf = []  # access to component id (site indexed)
     count = 0  # number of components
 
@@ -222,22 +222,22 @@ class Solution(object):
         self.uf = [i for i in range(n)]
 
     def find(self, x):  # 判断节点所属于的组
-        while x != uf[x]:
-            uf[x] = uf[uf[x]]
-            x = uf[x]
-        return uf[x]
+        while x != self.uf[x]:
+            self.uf[x] = self.uf[self.uf[x]]
+            x = self.uf[x]
+        return self.uf[x]
 
     def union(self, x, y):  # 连接两个节点
-        x_root = find(x)
-        y_root = find(y)
-        uf[x_root] = y_root
-        count -= 1
+        x_root = self.find(x)
+        y_root = self.find(y)
+        self.uf[x_root] = y_root
+        self.count -= 1
 
     def connected(self, x, y):  # 判断两个节点是否联通
-        return find(x) == find(y)
+        return self.find(x) == self.find(y)
 
     def count(self):  # 返回所有组的数目
-        return count       
+        return self.count       
 ```
 至此，动态连通性相关的Union-Find算法基本上就介绍完了，从容易想到的Quick-Find到相对复杂但是更加高效的Quick-Union，然后到对Quick-Union的几项改进，
 让我们的算法的效率不断的提高。
