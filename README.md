@@ -84,7 +84,7 @@ The current positioning of this project is to implement the basic algorithm in d
 
 ## License
 
-MIT © [ApacheCN](https://github.com/apachecn)
+GPL-3.0 © [ApacheCN](https://github.com/apachecn)
 
 ## Organization 
 
