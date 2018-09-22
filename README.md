@@ -80,7 +80,7 @@ If you are a newbie of Git, please check this [tutorial](https://github.com/apac
 
 The current positioning of this project is to implement the basic algorithm in different programming languages, refining the boilerplate, and summarize the ideas. 
 
-***Two words; boilerplate + ideas***
+### ***Two words: boilerplate + ideas***
 
 ## License
 
