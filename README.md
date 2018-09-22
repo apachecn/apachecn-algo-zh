@@ -46,6 +46,12 @@
 1. [Lisanaaa](https://github.com/Lisanaaa)
 2. [jiangzhonglian](https://github.com/jiangzhonglian)
 3. [chenyyx](https://github.com/chenyyx)
+4. [cclauss](https://github.com/cclauss)
+5. [yudaer](https://github.com/yudaer)
+6. [yuzhoujr](https://github.com/yuzhoujr)
+7. [wizardforcel](https://github.com/wizardforcel)
+8. [Stuming](https://github.com/Stuming)
+9. [GaofanHu](https://github.com/GaofanHu)
 
 ## Pull Request
 
