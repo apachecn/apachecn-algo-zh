@@ -35,6 +35,7 @@
 - [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
+- [OI Wiki](https://oi-wiki.org)
  
 ## Sponsor
 1. [Lisanaaa](https://github.com/Lisanaaa)
