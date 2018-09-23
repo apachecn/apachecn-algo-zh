@@ -47,6 +47,7 @@
 7. [wizardforcel](https://github.com/wizardforcel)
 8. [Stuming](https://github.com/Stuming)
 9. [GaofanHu](https://github.com/GaofanHu)
+10. [er3456qi](https://github.com/er3456qi)
 
 ## Pull Request
 
