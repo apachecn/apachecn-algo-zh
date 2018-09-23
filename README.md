@@ -49,6 +49,7 @@
 9. [GaofanHu](https://github.com/GaofanHu)
 10. [er3456qi](https://github.com/er3456qi)
 
+you can make a pull request if you are not in the list above
 ## Pull Request
 
 If you feel your PR is satisfied with one of the conditions below, we are glad to merge it. Welcome to contributions, open to suggestions!
