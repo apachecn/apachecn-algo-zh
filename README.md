@@ -36,6 +36,9 @@
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
  
+## Sponsor
+1. [Lisanaaa](https://github.com/Lisanaaa)
+2. [jiangzhonglian](https://github.com/jiangzhonglian)
 
 ## Contributors
 1. [Lisanaaa](https://github.com/Lisanaaa)
