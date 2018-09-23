@@ -48,6 +48,7 @@
 8. [Stuming](https://github.com/Stuming)
 9. [GaofanHu](https://github.com/GaofanHu)
 10. [er3456qi](https://github.com/er3456qi)
+11。[xshahq](https://github.com/xshahq)
 
 you can make a pull request if you are not in the list above
 ## Pull Request
