@@ -1,7 +1,6 @@
 <br>
 
 <div align="center">
-    <img src="https://github.com/apachecn/awesome-leetcode/blob/master/images/readme_badges/organization.jpg" width="150px">
     <br>
     <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
 </div>
