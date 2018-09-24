@@ -191,6 +191,22 @@ Operations on deque :
 ```
 [Deque in Python](https://www.geeksforgeeks.org/deque-in-python/)
 
+
+```python
+# 16. getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
+
+# 这种是常规方法
+idx = random.randint(0, self.length-1)
+return self.lst[idx]
+# 神奇函数
+return random.choice(self.lst)
+```
+
+
+
+
+
+
 ```
 达尔大佬对刷leetcode和刷笔试题有几个建议：
 
