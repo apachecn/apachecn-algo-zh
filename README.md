@@ -6,8 +6,6 @@
 </div>
 
 <br>
-<br>
-<br>
  
 ## Contents
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
