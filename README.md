@@ -38,7 +38,7 @@
 - [OI Wiki](https://oi-wiki.org)
  
 ## Sponsor
-1. [Lisanaaa](https://github.com/Lisanaaa): Feel free to see my profile and send me an email if you have any job opportunities.
+1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
 2. [jiangzhonglian](https://github.com/jiangzhonglian)
 
 ## Contributors
