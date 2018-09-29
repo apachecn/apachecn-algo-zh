@@ -1,13 +1,13 @@
 <br>
 
 <div align="center">
-    <img src="https://github.com/apachecn/awesome-leetcode/blob/master/images/readme_badges/organization.jpg" width="150px">
+    <a href=""> <img src="images/readme_badges/71EC577ABCDF4D4AE8082BED5D204919.jpg"></a>
     <br>
-    <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
+    <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
 </div>
 
 <br>
- 
+
 ## Contents
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
@@ -35,7 +35,12 @@
 - [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
- 
+- [OI Wiki](https://oi-wiki.org)
+- [leetcode-in-go](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94)
+
+## Sponsor
+1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
+2. [jiangzhonglian](https://github.com/jiangzhonglian)
 
 ## Contributors
 1. [Lisanaaa](https://github.com/Lisanaaa)
@@ -48,6 +53,8 @@
 8. [Stuming](https://github.com/Stuming)
 9. [GaofanHu](https://github.com/GaofanHu)
 10. [er3456qi](https://github.com/er3456qi)
+11. [xshahq](https://github.com/xshahq)
+12. [xiaqunfeng](https://github.com/xiaqunfeng)
 
 you can make a pull request if you are not in the list above
 ## Pull Request
