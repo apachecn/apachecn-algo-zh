@@ -24,7 +24,7 @@
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 - [visualgo算法可视化网站](https://visualgo.net/en)
 - [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-- [HiredInTech](https://www.hiredintech.com/) System Design 的总结特别适合入门
+- [HiredInTech System Design](https://www.hiredintech.com/)
 - [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
 - [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
 - [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
