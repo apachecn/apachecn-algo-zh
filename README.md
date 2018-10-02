@@ -12,11 +12,13 @@
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Java)
+    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Javascript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
 2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Java)
+    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Javascript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
     
 ## Useful Links
@@ -66,7 +68,9 @@ If you feel your PR is satisfied with one of the conditions below, we are glad t
 - Follow up solutions
 - Unsubmitted questions
 
-Feel free to get our [PR template](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)
+Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)
+
+***Note that the file name needs to be filled out with underline 注意文件名需要填充下划线***
 
 If you are a newbie of Git, please check this [tutorial](https://github.com/apachecn/kaggle/tree/dev/docs/GitHub) we have made.
 
