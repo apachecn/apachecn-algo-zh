@@ -12,11 +12,13 @@
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Java)
+    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Javascript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
 2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Java)
+    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Javascript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
     
 ## Useful Links
