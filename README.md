@@ -68,7 +68,7 @@ If you feel your PR is satisfied with one of the conditions below, we are glad t
 - Follow up solutions
 - Unsubmitted questions
 
-Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)
+Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)，***Note that the file name needs to be filled out with underline 注意文件名需要填充下划线***
 
 If you are a newbie of Git, please check this [tutorial](https://github.com/apachecn/kaggle/tree/dev/docs/GitHub) we have made.
 
