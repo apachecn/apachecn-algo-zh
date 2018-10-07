@@ -24,8 +24,9 @@ Can you solve it without using extra space?
 > 思路 1
 ******- 时间复杂度: O(N^2)******- 空间复杂度: O(1)******
 
-直接快慢指针，跟141一样，。这里稍微注意一下***```while-else clause```***就行
+直接快慢指针，跟141一样，。这里注意一下***while-else clause***的用法就行
 
+beats 99.81%
 
 ```python
 class Solution(object):
