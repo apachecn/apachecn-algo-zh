@@ -204,3 +204,13 @@ return random.choice(self.lst)
 
 
 
+```python
+# 17. while-else clause
+
+python支持while-else 语句
+
+详细请看https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/142_Linked_List_Cycle_II.md
+```
+
+
+
