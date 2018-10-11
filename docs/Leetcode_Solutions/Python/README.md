@@ -1,1 +1,1 @@
-# Leetcode solutions and summarizations!
+# Leetcode solutions and summary!

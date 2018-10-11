@@ -12,7 +12,7 @@
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Java)
-    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Javascript)
+    - [Javascript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/JavaScript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
 2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
@@ -57,6 +57,7 @@
 10. [er3456qi](https://github.com/er3456qi)
 11. [xshahq](https://github.com/xshahq)
 12. [xiaqunfeng](https://github.com/xiaqunfeng)
+13. [CaviarChen](https://github.com/CaviarChen)
 
 you can make a pull request if you are not in the list above
 ## Pull Request
