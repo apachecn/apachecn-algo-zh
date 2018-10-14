@@ -1,22 +1,24 @@
 <br>
 
 <div align="center">
-    <img src="https://github.com/apachecn/awesome-leetcode/blob/master/images/readme_badges/organization.jpg" width="150px">
+    <a href=""> <img src="images/readme_badges/71EC577ABCDF4D4AE8082BED5D204919.jpg"></a>
     <br>
-    <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
+    <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
 </div>
 
 <br>
- 
+
 ## Contents
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Java)
+    - [Javascript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/JavaScript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
 2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Java)
+    - [Javascript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Javascript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
     
 ## Useful Links
@@ -24,7 +26,7 @@
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 - [visualgo算法可视化网站](https://visualgo.net/en)
 - [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-- [HiredInTech](https://www.hiredintech.com/) System Design 的总结特别适合入门
+- [HiredInTech System Design](https://www.hiredintech.com/)
 - [mitcc的Github](https://github.com/mitcc/AlgoSolutions)
 - [小土刀的面试刷题笔记](http://wdxtub.com/interview/14520594642530.html)
 - [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms)
@@ -35,7 +37,12 @@
 - [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
- 
+- [OI Wiki](https://oi-wiki.org)
+- [leetcode-in-go](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94)
+
+## Sponsor
+1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
+2. [jiangzhonglian](https://github.com/jiangzhonglian)
 
 ## Contributors
 1. [Lisanaaa](https://github.com/Lisanaaa)
@@ -47,7 +54,12 @@
 7. [wizardforcel](https://github.com/wizardforcel)
 8. [Stuming](https://github.com/Stuming)
 9. [GaofanHu](https://github.com/GaofanHu)
+10. [er3456qi](https://github.com/er3456qi)
+11. [xshahq](https://github.com/xshahq)
+12. [xiaqunfeng](https://github.com/xiaqunfeng)
+13. [CaviarChen](https://github.com/CaviarChen)
 
+you can make a pull request if you are not in the list above
 ## Pull Request
 
 If you feel your PR is satisfied with one of the conditions below, we are glad to merge it. Welcome to contributions, open to suggestions!
@@ -57,7 +69,9 @@ If you feel your PR is satisfied with one of the conditions below, we are glad t
 - Follow up solutions
 - Unsubmitted questions
 
-Feel free to get our [PR template](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)
+Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-algorithm/blob/master/PULL_REQUEST_TEMPLATE.md)
+
+***Note that the file name needs to be filled out with underline 注意文件名需要填充下划线***
 
 If you are a newbie of Git, please check this [tutorial](https://github.com/apachecn/kaggle/tree/dev/docs/GitHub) we have made.
 

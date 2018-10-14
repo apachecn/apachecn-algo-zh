@@ -190,3 +190,27 @@ Operations on deque :
 12. rotate() :- This function rotates the deque by the number specified in arguments. If the number specified is negative, rotation occurs to left. Else rotation is to right.
 ```
 [Deque in Python](https://www.geeksforgeeks.org/deque-in-python/)
+
+
+```python
+# 16. getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
+
+# 这种是常规方法
+idx = random.randint(0, self.length-1)
+return self.lst[idx]
+# 神奇函数
+return random.choice(self.lst)
+```
+
+
+
+```python
+# 17. while-else clause
+
+python支持while-else 语句
+```
+详细请看[leetcode 142题](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/142_Linked_List_Cycle_II.md)，这里我用到了这个语句，贼爽！
+
+
+
+
