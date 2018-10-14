@@ -24,7 +24,7 @@
 ## Useful Links
 - [kamyu104的Github](https://github.com/kamyu104/LeetCode)
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
-- [数据结构与算法/leetcode/lintcode题解](https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73048)
+- [看云文档：数据结构与算法](https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73048)
 - [visualgo算法可视化网站](https://visualgo.net/en)
 - [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [HiredInTech System Design](https://www.hiredintech.com/)
