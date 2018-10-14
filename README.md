@@ -24,6 +24,7 @@
 ## Useful Links
 - [kamyu104的Github](https://github.com/kamyu104/LeetCode)
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
+- [看云文档：数据结构与算法](https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73048)
 - [visualgo算法可视化网站](https://visualgo.net/en)
 - [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [HiredInTech System Design](https://www.hiredintech.com/)
@@ -69,7 +70,7 @@ If you feel your PR is satisfied with one of the conditions below, we are glad t
 - Follow up solutions
 - Unsubmitted questions
 
-Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-leetcode/blob/master/docs/Leetcode_Solutions/Python/001._two_sum.md)
+Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-algorithm/blob/master/PULL_REQUEST_TEMPLATE.md)
 
 ***Note that the file name needs to be filled out with underline 注意文件名需要填充下划线***
 
