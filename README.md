@@ -40,6 +40,7 @@
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
 - [OI Wiki](https://oi-wiki.org)
 - [leetcode-in-go](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94)
+- [Algorithm Archive](https://github.com/algorithm-archivists/algorithm-archive)
 
 ## Sponsor
 1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
@@ -59,6 +60,7 @@
 11. [xshahq](https://github.com/xshahq)
 12. [xiaqunfeng](https://github.com/xiaqunfeng)
 13. [CaviarChen](https://github.com/CaviarChen)
+14. [飞龙](https://github.com/wizardforcel)
 
 you can make a pull request if you are not in the list above
 ## Pull Request
