@@ -59,6 +59,7 @@
 11. [xshahq](https://github.com/xshahq)
 12. [xiaqunfeng](https://github.com/xiaqunfeng)
 13. [CaviarChen](https://github.com/CaviarChen)
+14. [royIdoodle](https://github.com/royIdoodle)
 
 you can make a pull request if you are not in the list above
 ## Pull Request
