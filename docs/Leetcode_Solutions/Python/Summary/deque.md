@@ -1,4 +1,3 @@
-先看一个非常🐂的帖子，当我知道python 除了有list之外还有collections就已经被刷新了一次了，然后数据结构 x 数据结构，就展示了数据结构的魅力
 
 <http://stackoverflow.com/questions/4098179/anyone-know-this-python-data-structure>
 
