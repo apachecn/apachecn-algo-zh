@@ -230,7 +230,10 @@ class UnionFind(object):
     def union(self, x, y):  # 连接两个节点
         x_root = self.find(x)
         y_root = self.find(y)
+		if x_root != y_root:
+			size[y_root] += size[x_root]
         self.uf[x_root] = y_root
+	
         self.count -= 1
 
     def connected(self, x, y):  # 判断两个节点是否联通
