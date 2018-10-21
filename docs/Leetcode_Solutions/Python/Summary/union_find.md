@@ -119,16 +119,16 @@ class Solution(object):
 
 ```
 class Solution(object):
-    uf = []    # access to component id (site indexed)
+    uf = []  # access to component id (site indexed)
     count = 0  # number of components
 
     def uf(self, n):  # 初始化uf数组和组数目
         self.count = n
-        self.uf = [i for i in range(n)]    
-        
+        self.uf = [i for i in range(n)]
+
     def find(self, x):  # 判断节点所属于的组
-    # if uf[x] != x:      ## 这种方式也可以，但是递归次数多了容易出问题
-    # 	uf[x] = find(uf[x])
+        # if uf[x] != x:      ## 这种方式也可以，但是递归次数多了容易出问题
+        # 	uf[x] = find(uf[x])
         while x != uf[x]:
             x = uf[x]
         return uf[x]
@@ -138,12 +138,12 @@ class Solution(object):
         y_root = find(y)
         uf[x_root] = y_root
         count -= 1
-    
+
     def connected(self, x, y):  # 判断两个节点是否联通
         return find(x) == find(y)
-    
+
     def count(self):  # 返回所有组的数目
-        return count        
+        return count       
 ```
 
 为了克服这个问题，BST可以演变成为红黑树或者AVL树等等。
@@ -180,13 +180,13 @@ tree_size = [1 for i in range(n)]
 def union(self, x, y):  # 连接两个节点
     x_root = find(x)
     y_root = find(y)
-	if tree_size[x_root] <= tree_size[y_root]:
-    	uf[x_root] = y_root
-		tree_size[y_root] += tree_size[x_root]
-	else:
-    	uf[y_root] = x_root
-		tree_size[x_root] += tree_size[y_root]
-    count -= 1
+    if tree_size[x_root] <= tree_size[y_root]:
+        uf[x_root] = y_root
+        tree_size[y_root] += tree_size[x_root]
+    else:
+        uf[y_root] = x_root
+        tree_size[x_root] += tree_size[y_root]
+        count -= 1
 ```
 
 可以发现，通过tree_size数组决定如何对两棵树进行合并之后，最后得到的树的高度大幅度减小了。这是十分有意义的。
@@ -214,12 +214,10 @@ def find(self, x):  # 判断节点所属于的组
 
 ```python
 class UnionFind(object):
-    uf = []  # access to component id (site indexed)
-    count = 0  # number of components
-
     def uf(self, n):  # 初始化uf数组和组数目
         self.count = n
         self.uf = [i for i in range(n)]
+        self.size = [1] * n
 
     def find(self, x):  # 判断节点所属于的组
         while x != self.uf[x]:
@@ -230,18 +228,18 @@ class UnionFind(object):
     def union(self, x, y):  # 连接两个节点
         x_root = self.find(x)
         y_root = self.find(y)
-		if x_root != y_root:
-			size[y_root] += size[x_root]
+        if x_root != y_root:
+            size[y_root] += size[x_root]
         self.uf[x_root] = y_root
-	
         self.count -= 1
 
     def connected(self, x, y):  # 判断两个节点是否联通
         return self.find(x) == self.find(y)
 
     def count(self):  # 返回所有组的数目
-        return self.count       
+        return self.count      
 ```
+
 ### 时间复杂度分析
 - find()操作的时间复杂度最坏情况下为O(N)
 - union()操作的时间复杂度最坏情况下为O(1)
