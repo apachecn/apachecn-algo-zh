@@ -5,8 +5,9 @@
 # 用lst.sort() 而不是nlst = sorted(lst)， 区别在于lst.sort()是 in-place sort，改变lst, sorted会创建新list，成本比较高。
 ```
 ```python
-# 2. xrange和range的区别
+# 2. xrange和range的区别(python 2)
 # range会产生list存在memory中，xrange更像是生成器，generate on demand所以有的时候xrange会更快
+# python 3中的range代替了xrange的功能
 ```
 ```python
 # 3. python处理矩阵
