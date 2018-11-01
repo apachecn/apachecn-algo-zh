@@ -90,9 +90,11 @@ and another truth is that:
 
 - so N % 9 = a[0] + a[1] + ..a[n]
 - means N % 9 = M
-- so N = M (% 9)
+- so N % 9 = M (% 9)
 
-as 9 % 9 = 0,so we can make (n - 1) % 9 + 1 to help us solve the problem when n is 9.as N is 9, ( 9 - 1) % 9 + 1 = 9
+as 9 % 9 = 0, 18 % 9 == 0,,,,etc. so we can make (n - 1) % 9 + 1 to help us solve the problem when n is 9.
+
+as N is 9, ( 9 - 1) % 9 + 1 = 9
 
 
 beats 99.88%
