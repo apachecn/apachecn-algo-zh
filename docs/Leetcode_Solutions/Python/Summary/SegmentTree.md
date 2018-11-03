@@ -26,14 +26,11 @@ The merging may be different for different problems. For this problem, merging i
 下面是我的python实现，可以作为模版
 
 ```python
-from math import *
-
-
 class SegmentTree(object):
     def __init__(self, nums):
         self.nums = nums
         self.range_len = len(nums)
-        power = ceil(log(self.range_len, 2))
+        power = math.ceil(math.log(self.range_len, 2)) if self.range_len else 0
         self.st = [0] * (2 ** (power + 1))
         self.constrcut(nums, 0, self.range_len - 1, 0)
 
