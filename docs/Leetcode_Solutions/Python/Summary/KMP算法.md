@@ -99,7 +99,38 @@ print(s.findAllMatchIndexes('aaa', 'a'))  # [0,1,2]
 ```
 
 
-### 3. 上面的lps函数可以写成另外一种形式
+
+### 3. 通过LPS来求一个字符串的最长回文前缀字符串(详见214题思路5)
+
+```python
+class LongestParlindromePrefixSubarray(object):
+    def lpps(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        pattern = s + '#' + s[::-1]
+        lps = self.findLPS(pattern)
+        return s[:lps[-1]]
+
+    def findLPS(self, pattern):
+        length, lps = 0, [0]
+        for i in range(1, len(pattern)):
+            while length > 0 and pattern[length] != pattern[i]:
+                length = lps[length - 1]
+            if pattern[length] == pattern[i]:
+                length += 1
+            lps.append(length)
+        return lps
+
+s = LongestParlindromePrefixSubarray()
+print(s.lpps("aacecaaa"))  # aacecaa
+print(s.lpps("abbacccc"))  # abba
+print(s.lpps("abccba"))  # abccba
+```
+
+
+### 4. 上面的lps函数可以写成另外一种形式
 
 ```python
     def findLPS(self, pattern):
@@ -121,6 +152,11 @@ print(s.findAllMatchIndexes('aaa', 'a'))  # [0,1,2]
                     i += 1
         return lps
 ```
+
+### 5. 几道例题
+
+1. [leetcode 28](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/028._implement_strstr().md)
+2. [leetcode 214](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/214._Shortest_Palindrome.md) 思路5
 
                 
                 
