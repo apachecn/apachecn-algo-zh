@@ -43,6 +43,8 @@ class SegmentTree(object):
     # Time Complexity for tree construction is O(n).
     # There are total 2n-1 nodes, and value of every node is calculated only once in tree construction.
     def constrcut(self, nums, start, end, cur):  # O(N)
+        if start > end:
+            return
         if start == end:
             self.st[cur] = nums[start]
             return nums[start]
