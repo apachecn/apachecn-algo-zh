@@ -22,7 +22,7 @@
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
     
 ## Useful Links
-- [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
+- [编程之法：面试和算法心得](https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/index.html)
 - [kamyu104的Github](https://github.com/kamyu104/LeetCode-Solutions)
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 - [看云文档：数据结构与算法](https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73048)
