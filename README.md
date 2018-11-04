@@ -22,6 +22,7 @@
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
     
 ## Useful Links
+- [编程之法：面试和算法心得](https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/index.html)
 - [kamyu104的Github](https://github.com/kamyu104/LeetCode-Solutions)
 - [数据结构与算法/leetcode/lintcode题解](https://algorithm.yuanbin.me/zh-hans/)
 - [看云文档：数据结构与算法](https://www.kancloud.cn/kancloud/data-structure-and-algorithm-notes/73048)
@@ -35,12 +36,12 @@
 - https://github.com/liuchuo/LeetCode
 - [公瑾的Github](https://github.com/yuzhoujr/leetcode)
 - [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
-- [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
 - [CS-Notes](https://github.com/CyC2018/CS-Notes)
 - [OI Wiki](https://oi-wiki.org)
 - [leetcode-in-go](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94)
 - [Algorithm Archive](https://github.com/algorithm-archivists/algorithm-archive)
+- [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)
 
 ## Sponsor
 1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
