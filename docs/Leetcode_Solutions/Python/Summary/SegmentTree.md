@@ -26,14 +26,11 @@ The merging may be different for different problems. For this problem, merging i
 下面是我的python实现，可以作为模版
 
 ```python
-from math import *
-
-
 class SegmentTree(object):
     def __init__(self, nums):
         self.nums = nums
         self.range_len = len(nums)
-        power = ceil(log(self.range_len, 2))
+        power = math.ceil(math.log(self.range_len, 2)) if self.range_len else 0
         self.st = [0] * (2 ** (power + 1))
         self.constrcut(nums, 0, self.range_len - 1, 0)
 
@@ -46,6 +43,8 @@ class SegmentTree(object):
     # Time Complexity for tree construction is O(n).
     # There are total 2n-1 nodes, and value of every node is calculated only once in tree construction.
     def constrcut(self, nums, start, end, cur):  # O(N)
+        if start > end:
+            return
         if start == end:
             self.st[cur] = nums[start]
             return nums[start]
