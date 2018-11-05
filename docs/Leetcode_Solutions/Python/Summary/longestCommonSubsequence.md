@@ -35,3 +35,6 @@ s1 = "AGGTAB"
 s2 = "GXTXAYB"
 print("Length of LCS is ", longestCommonSubsequence(s1, s2))
 ```
+
+
+参考[Longest Common Subsequence | DP-4](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/)
