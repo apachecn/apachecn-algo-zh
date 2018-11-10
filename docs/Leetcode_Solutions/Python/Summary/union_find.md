@@ -229,7 +229,7 @@ class UnionFind(object):
         x_root = self.find(x)
         y_root = self.find(y)
         if x_root != y_root:
-            size[y_root] += size[x_root]
+            self.size[y_root] += self.size[x_root]
         self.uf[x_root] = y_root
         self.count -= 1
 
