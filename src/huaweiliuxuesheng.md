@@ -42,7 +42,7 @@ if 1 <= n <= 10 ** 9:
     print(pageCount(n))
 else:
     print(-1)
-```python
+```
 
 
 """约瑟夫问题"""
