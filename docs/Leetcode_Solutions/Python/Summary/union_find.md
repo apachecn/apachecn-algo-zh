@@ -228,9 +228,11 @@ class UnionFind(object):
     def union(self, x, y):  # 连接两个节点
         x_root = self.find(x)
         y_root = self.find(y)
-        if x_root != y_root:
-            self.size[y_root] += self.size[x_root]
+        if x_root == y_root:
+            return
         self.uf[x_root] = y_root
+        self.size[y_root] += self.size[x_root]
+        self.size[x_root] = 0
         self.count -= 1
 
     def connected(self, x, y):  # 判断两个节点是否联通
