@@ -15,7 +15,7 @@
     - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/JavaScript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
-2. [剑指offer](https://github.com/apachecn/awesome-algorithm/tree/master/docs/%E5%89%91%E6%8C%87offer)
+2. [剑指 Offer](https://github.com/apachecn/awesome-algorithm/tree/master/docs/%E5%89%91%E6%8C%87offer)
     - [Python](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Python)
     - [Java](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Java)
     - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/JavaScript)
