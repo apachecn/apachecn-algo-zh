@@ -34,3 +34,7 @@ output:
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 ```
+
+## Reference
+1. [线性筛法求素数的原理与实现](https://blog.csdn.net/bjrxyz/article/details/8125913)
+2. [线性筛法求素数](https://www.cnblogs.com/grubbyskyer/p/3852421.html)
