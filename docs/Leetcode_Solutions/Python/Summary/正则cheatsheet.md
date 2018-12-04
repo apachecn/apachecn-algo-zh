@@ -50,3 +50,7 @@
 | 匹配子表达式大于等于 n次                     | \{n,\}     | {n,}          | {n,}        | {n,}       |
 | 最少匹配 n 次且最多匹配 m 次                 | \{n,m\}    | {n,m}         | {n,m}       | {n,m}      |
 
+
+
+### Reference
+1. [正则表达式CheetSheet](http://zonxin.github.io/post/2015/08/regular-expression-cheetsheet)
