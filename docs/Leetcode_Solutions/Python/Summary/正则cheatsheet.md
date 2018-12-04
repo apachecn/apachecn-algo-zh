@@ -54,3 +54,5 @@
 
 ### Reference
 1. [正则表达式CheetSheet](http://zonxin.github.io/post/2015/08/regular-expression-cheetsheet)
+2. [Quick-Start: Regex Cheat Sheet](https://www.rexegg.com/regex-quickstart.html)
+3. [Specifying Modes Inside The Regular Expression](https://www.regular-expressions.info/modifiers.html)
