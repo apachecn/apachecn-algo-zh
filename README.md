@@ -15,6 +15,11 @@
     - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/JavaScript)
     - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
     - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
+2. [剑指 Offer](https://github.com/apachecn/awesome-algorithm/tree/master/docs/%E5%89%91%E6%8C%87offer)
+    - [Python](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Python)
+    - [Java](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Java)
+    - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/JavaScript)
+    - [C++](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/C++)
 2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python)
     - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Java)
@@ -42,6 +47,7 @@
 - [leetcode-in-go](https://github.com/aQuaYi/LeetCode-in-Go#leetcode-%E7%9A%84-go-%E8%A7%A3%E7%AD%94)
 - [Algorithm Archive](https://github.com/algorithm-archivists/algorithm-archive)
 - [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)
+- [算法珠玑](https://soulmachine.gitbooks.io/algorithm-essentials/java/)
 
 ## Sponsor
 1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**

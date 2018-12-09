@@ -214,7 +214,7 @@ def find(self, x):  # 判断节点所属于的组
 
 ```python
 class UnionFind(object):
-    def uf(self, n):  # 初始化uf数组和组数目
+    def __init__(self, n):  # 初始化uf数组和组数目
         self.count = n
         self.uf = [i for i in range(n)]
         self.size = [1] * n # 每个联通分量的size
