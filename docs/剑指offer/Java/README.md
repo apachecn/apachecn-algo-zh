@@ -65,3 +65,5 @@
 | 57_02 | [Continuous Squence With Sum](/docs/剑指offer/Java/57_02_ContinuousSquenceWithSum) |
 | 58_01 | [Reverse Words In Sentence](/docs/剑指offer/Java/58_01_ReverseWordsInSentence) |
 | 58_02 | [Left Rotate String](/docs/剑指offer/Java/58_02_LeftRotateString) |
+| 59_01 | [Max In Sliding Window](/docs/剑指offer/Java/59_01_MaxInSlidingWindow) |
+| 61 | [Continous Cards](/docs/剑指offer/Java/61_ContinousCards) |
