@@ -243,17 +243,18 @@ class UnionFind(object):
 ```
 
 ```python
-f = {}
-
-def find(x):
-    f.setdefault(x, x)
-    if x != f[x]:
-        f[x] = find(f[x])
-    return f[x]
-
-
-def union(x, y):
-    f[find(x)] = find(y)
+class UnionFind(object):
+    def __init__(self):  
+        self.uf = {}
+        
+    def find(self, x):
+        self.uf.setdefault(x, x)
+        if x != self.uf[x]:
+            self.uf[x] = self.find(self.uf[x])
+        return self.uf[x]
+    
+    def union(self, x, y):
+        self.uf[self.find(x)] = self.find(y)
 ```
 
 ### 时间复杂度分析
