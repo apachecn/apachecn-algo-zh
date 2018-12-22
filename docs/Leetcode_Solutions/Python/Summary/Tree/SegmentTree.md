@@ -26,6 +26,7 @@ The merging may be different for different problems. For this problem, merging i
 下面是我的python实现，可以作为模版
 
 ```python
+import math
 class SegmentTree(object):
     def __init__(self, nums):
         self.nums = nums
@@ -96,5 +97,10 @@ s = SegmentTree(nums)
 print("Sum of values in given range = ", s.getSum(1, 3))
 s.updateValue(1, 9)
 print("Updated sum of values in given range = ", s.getSum(1, 3))
+
+
+
+Sum of values in given range =  15
+Updated sum of values in given range =  21
 
 ```
