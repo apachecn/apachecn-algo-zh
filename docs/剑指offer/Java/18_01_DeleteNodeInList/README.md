@@ -42,11 +42,8 @@ public class Solution {
         }
         // 删除的是尾节点
         else {
-            ListNode cur = head;
-            while (cur.next != tobeDelete) {
-                cur = cur.next;
-            }
-            cur.next = null;
+            // 当head遍历到tobeDelete时，指向的是同一个引用。可以直接将tobeDelete = null即可
+            tobeDelete = null;
         }
 
         return head;
