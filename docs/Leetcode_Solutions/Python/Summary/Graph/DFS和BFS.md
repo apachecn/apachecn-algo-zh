@@ -81,7 +81,7 @@ print(list(dfs_paths(graph, 'C', 'F'))) # [['C', 'A', 'B', 'E', 'F'], ['C', 'F']
 
 ### BFS
 
-迭代版本，和DFS唯一的区别就是pop(0)而不是pop()
+只有迭代版本，和DFS唯一的区别就是pop(0)而不是pop()
 ```python
 def bfs(graph, start): # iterative
     visited, queue = [], [start]
