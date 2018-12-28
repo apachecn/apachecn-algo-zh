@@ -145,6 +145,14 @@ print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
 
 ***总之，一般情况下，深度优先搜索法占内存少但速度较慢，广度优先搜索算法占内存多但速度较快，在距离和深度成正比的情况下能较快地求出最优解。因此在选择用哪种算法时，要综合考虑。决定取舍。***
 
+1.BFS是用来搜索最短径路的解是比较合适的，比如求最少步数的解，最少交换次数的解，因为BFS搜索过程中遇到的解一定是离根最近的，所以遇到一个解，一定就是最优解，此时搜索算法可以终止。这个时候不适宜使用DFS，因为DFS搜索到的解不一定是离根最近的，只有全局搜索完毕，才能从所有解中找出离根的最近的解。（当然这个DFS的不足，可以使用迭代加深搜索ID-DFS去弥补）
+
+2.空间优劣上，DFS是有优势的，DFS不需要保存搜索过程中的状态，而BFS在搜索过程中需要保存搜索过的状态，而且一般情况需要一个队列来记录。
+
+3.DFS适合搜索全部的解，因为要搜索全部的解，那么BFS搜索过程中，遇到离根最近的解，并没有什么用，也必须遍历完整棵搜索树，DFS搜索也会搜索全部，但是相比DFS不用记录过多信息，所以搜素全部解的问题，DFS显然更加合适。
+
+上面提到的迭代加深搜索（ID-dfs）我觉得充分吸收了BFS和DFS各自的长处
+
 #### Improvement/Follow up
 
 1. 一旦BFS/DFS与更具体的，更有特性的data structure结合起来，比如binary search tree，那么BFS/DFS会针对这个tree traversal显得更有特性。
@@ -158,6 +166,7 @@ print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
 2. [Edd Mann](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)
 3. [graph - Depth-first search in Python](https://codereview.stackexchange.com/questions/78577/depth-first-search-in-python)
 4. [DFS 和 BFS的特点](https://blog.csdn.net/Puppet__/article/details/76690824)
+5. [能不能系统讲讲什么时候用BFS和DFS](https://www.jiuzhang.com/qa/623/)
 
 
 
