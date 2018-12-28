@@ -142,7 +142,8 @@ print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
 3. 当结点到跟结点的费用（有的书称为耗散值）和结点的深度成正比时，特别是当每一结点到根结点的费用等于深度时，用广度优先法得到的解是最优解，但如果不成正比，则得到的解不一定是最优解。这一类问题要求出最优解，一种方法是使用后面要介绍的其他方法求解，另外一种方法是改进前面深度（或广度）优先搜索算法：找到一个目标后，不是立即退出，而是记录下目标结点的路径和费用，如果有多个目标结点，就加以比较，留下较优的结点。把所有可能的路径都搜索完后，才输出记录的最优路径。
 4. 广度优先搜索算法，一般需要存储产生的所有结点，占的存储空间要比深度优先大得多，因此程序设计中，必须考虑溢出和节省内存空间得问题。
 5. 比较深度优先和广度优先两种搜索法，广度优先搜索法一般无回溯操作，即入栈和出栈的操作，所以运行速度比深度优先搜索算法法要快些。
-总之，一般情况下，深度优先搜索法占内存少但速度较慢，广度优先搜索算法占内存多但速度较快，在距离和深度成正比的情况下能较快地求出最优解。因此在选择用哪种算法时，要综合考虑。决定取舍。
+
+***总之，一般情况下，深度优先搜索法占内存少但速度较慢，广度优先搜索算法占内存多但速度较快，在距离和深度成正比的情况下能较快地求出最优解。因此在选择用哪种算法时，要综合考虑。决定取舍。***
 
 #### Improvement/Follow up
 
@@ -156,6 +157,7 @@ print(shortest_path(graph, 'A', 'F'))  # ['A', 'C', 'F']
 1. [Depth-and Breadth-First Search](https://jeremykun.com/2013/01/22/depth-and-breadth-first-search/)
 2. [Edd Mann](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)
 3. [graph - Depth-first search in Python](https://codereview.stackexchange.com/questions/78577/depth-first-search-in-python)
+4. [DFS 和 BFS的特点](https://blog.csdn.net/Puppet__/article/details/76690824)
 
 
 
