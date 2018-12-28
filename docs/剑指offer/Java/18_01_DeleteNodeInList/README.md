@@ -6,6 +6,8 @@
 ### 解法
 判断要删除的节点是否是尾节点，若是，直接删除；若不是，把要删除节点的下一个节点赋给要删除的节点即可。
 
+### ```进行n次操作，平均时间复杂度为：( (n-1) * O(1) + O(n) ) / n = O(1)，所以符合题目上说的O(1)```
+
 ```java
 /**
  * @author bingo
@@ -24,23 +26,27 @@ public class Solution {
      * @param head 链表头节点
      * @param tobeDelete 要删除的节点
      */
-    public void deleteNode(ListNode head, ListNode tobeDelete) {
+    public ListNode deleteNode(ListNode head, ListNode tobeDelete) {
         if (head == null || tobeDelete == null) {
-            return;
+            return head;
         }
 
-        // 说明要删除的是最后一个节点
-        if (tobeDelete.next == null) {
-            ListNode cur = head;
-            while (cur.next != tobeDelete) {
-                cur = cur.next;
-            }
-            cur.next = null;
-        } else {
-            // 非尾节点，直接把该节点的下一个节点赋给当前节点
+        // 删除的不是尾节点
+        if (tobeDelete.next != null) {
             tobeDelete.val = tobeDelete.next.val;
             tobeDelete.next = tobeDelete.next.next;
         }
+        // 链表中仅有一个节点
+        else if (head == tobeDelete) {
+            head = null;
+        }
+        // 删除的是尾节点
+        else {
+            // 当head遍历到tobeDelete时，指向的是同一个引用。可以直接将tobeDelete = null即可
+            tobeDelete = null;
+        }
+
+        return head;
     }
 }
 ```
