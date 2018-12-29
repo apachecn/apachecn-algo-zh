@@ -58,7 +58,11 @@ for w in words:
     t['#'] = '#'
 ```
 
-判断isWordEnd利用```if '#' in node:```即可，使用方法见[第212题思路三](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/212._Word_Search_II.md)
+判断isWordEnd利用
+```python
+if '#' in node:
+```
+即可，使用方法见[第212题思路三](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/212._Word_Search_II.md)
 
 
 
