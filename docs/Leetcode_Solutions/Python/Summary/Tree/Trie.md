@@ -43,3 +43,42 @@ def test():
 
 test()
 ```
+
+还有一种更简单的模式
+
+```python
+# build trie 
+trie = {}
+for w in words:
+    t = trie
+    for c in w:
+        if c not in t:
+            t[c] = {}
+        t = t[c]
+    t['#'] = '#'
+```
+
+判断isWordEnd利用```if '#' in node:```即可，使用方法见[第212题思路三](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/212._Word_Search_II.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
