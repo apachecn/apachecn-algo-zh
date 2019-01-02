@@ -9,62 +9,58 @@
 - 在树A中找到和树B的根结点值一样的结点R
 - 判断树A以R为根结点的子树是否包含与树B一样的结构
 
+这道题的time complexity应该为O(n * m)，其中n为root1的节点数，m为root2的节点数。
+
 ```java
+/**
+public class TreeNode {
+    int val = 0;
+    TreeNode left = null;
+    TreeNode right = null;
+
+    public TreeNode(int val) {
+        this.val = val;
+
+    }
+}
+*/
 
 /**
- * @author bingo
- * @since 2018/11/22
- */
-
-/*
- public class TreeNode {
- int val = 0;
- TreeNode left = null;
- TreeNode right = null;
-
- public TreeNode(int val) {
- this.val = val;
-
- }
-
- }
+ * @author mcrwayfun
+ * @version v1.0
+ * @date Created in 2019/01/01
+ * @description
  */
 public class Solution {
-    /**
-     * 判断root2是否是root1的子树
-     * @param root1 树1
-     * @param root2 树2
-     * @return 是否是子树
-     */
+
     public boolean HasSubtree(TreeNode root1, TreeNode root2) {
-        boolean res = false;
-        if (root1 != null && root2 != null) {
-            if (root1.val == root2.val) {
-                res = isSame(root1, root2);
-            }
-            if (!res) {
-                res = HasSubtree(root1.left, root2);
-            }
-            if (!res) {
-                res = HasSubtree(root1.right, root2);
-            }
+
+        if (root1 == null || root2 == null) {
+            return false;
         }
 
-        return res;
+        return isSame(root1, root2) || 
+                HasSubtree(root1.left, root2) || HasSubtree(root1.right, root2);
     }
 
     private boolean isSame(TreeNode root1, TreeNode root2) {
+
         if (root2 == null) {
             return true;
         }
+
+        // 在root2，root1遍历完成后，仍未找到符合的结构，返回false
         if (root1 == null) {
             return false;
         }
+
         if (root1.val != root2.val) {
             return false;
         }
+
         return isSame(root1.left, root2.left) && isSame(root1.right, root2.right);
     }
+
 }
 ```
 
