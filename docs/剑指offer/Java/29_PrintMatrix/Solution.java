@@ -11,55 +11,59 @@ public class Solution {
      * @return 存放结果的list
      */
     public ArrayList<Integer> printMatrix(int[][] matrix) {
-
         ArrayList<Integer> reList = new ArrayList<>();
         if (matrix == null) {
             return reList;
         }
 
-        int start = 0;
-        int rows = matrix.length;
-        int colums = matrix[0].length;
+        int tR = 0;
+        int tC = 0;
+        int dR = matrix.length - 1;
+        int dC = matrix[0].length - 1;
 
-        while (rows > start * 2 && colums > start * 2) {
-            printMatrix(matrix, rows, colums, start, reList);
-            start++;
+        while (tR <= dR && tC <= dC) {
+            printMatrix(matrix, tR++, tC++, dR--, dC--, reList);
         }
 
         return reList;
     }
 
-    private void printMatrix(int[][] matrix, int rows, int columns, int start, ArrayList<Integer> reList) {
-
-        // 相当于坐标轴中的y坐标
-        int endX = columns - start - 1;
-        // 相当于坐标轴中的x坐标
-        int endY = rows - start - 1;
-
-        // 从左到右，x增加y不变
-        for (int i = start; i <= endX; i++) {
-            reList.add(matrix[start][i]);
+    public void printMatrix(int[][] matrix, int tR, int tC, int dR, int dC, ArrayList<Integer> reList) {
+        // 只有一行
+        if (tR == dR) {
+            for (int i = tC; i <= dC; i++) {
+                reList.add(matrix[tR][i]);
+            }
         }
-
-        if (start < endY) {
-            // 从上到下，x不变y增加
-            for (int i = start + 1; i <= endY; i++) {
-                reList.add(matrix[i][endX]);
+        // 只有一列
+        else if (tC == dC) {
+            for (int i = tR; i <= dR; i++) {
+                reList.add(matrix[i][tC]);
+            }
+        } else {
+            int curR = tR;
+            int curC = tC;
+            // 从左到右
+            while (curC != dC) {
+                reList.add(matrix[tR][curC]);
+                curC++;
+            }
+            // 从上到下
+            while (curR != dR) {
+                reList.add(matrix[curR][dC]);
+                curR++;
+            }
+            // 从右到左
+            while (curC != tC) {
+                reList.add(matrix[dR][curC]);
+                curC--;
+            }
+            // 从下到上
+            while (curR != tR) {
+                reList.add(matrix[curR][tC]);
+                curR--;
             }
         }
 
-        if (start < endX && start < endY) {
-            // 从右到左，x减少y不变
-            for (int i = endX - 1; i >= start; i--) {
-                reList.add(matrix[endY][i]);
-            }
-        }
-
-        if (start < endX && start < endY - 1) {
-            // 从下到上，x不变y减少
-            for (int i = endY - 1; i > start; i--) {
-                reList.add(matrix[i][start]);
-            }
-        }
     }
 }
