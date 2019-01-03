@@ -238,7 +238,7 @@ class UnionFind(object):
     def connected(self, x, y):  # 判断两个节点是否联通
         return self.find(x) == self.find(y)
 
-    def count(self):  # 返回所有组的数目
+    def getCount(self):  # 返回所有组的数目
         return self.count      
 ```
 
