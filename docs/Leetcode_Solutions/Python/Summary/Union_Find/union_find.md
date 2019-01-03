@@ -218,7 +218,6 @@ class UnionFind(object):
         self.count = n
         self.uf = [i for i in range(n)]
         self.size = [1] * n # 每个联通分量的size
-        self.rank = [1] * n
 
     def find(self, x):  # 判断节点所属于的组
         while x != self.uf[x]:
@@ -231,9 +230,8 @@ class UnionFind(object):
         y_root = self.find(y)
         if x_root == y_root:
             return
-        if self.rank[x_root] < self.rank[y_root]:
+        if self.size[x_root] < self.size[y_root]:
             x_root, y_root = y_root, x_root
-        self.rank[x_root] += self.rank[y_root]
         self.uf[y_root] = x_root
         self.size[x_root] += self.size[y_root]
         self.size[y_root] = 0
