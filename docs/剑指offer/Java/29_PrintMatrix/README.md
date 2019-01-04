@@ -14,16 +14,26 @@
 1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
 ```
 ### 解法
-由外往里，一圈圈打印矩阵即可。
+剑指offer上的思路有点复杂，需要考虑坐标变换太多，考虑用另一种思路来解决。
+
+在矩阵中，使用左上角坐标(tR,tC)和右下角的坐标(dR,dC)就可以表示一个矩阵。比如题目中的矩阵，当(tR,tC) = (0,0)和(dR,dC) = (3,3)时，表示的子矩阵就是整个矩阵：
 
 ```java
-import java.util.ArrayList;
+1	2	3	4
+5			8
+9			12
+13	14	15	16    
+```
 
+当外层循环遍历后，可以令tR和tC加1，dR和dC减1，执行内层循环。当左上角的坐标跑到右下角坐标的右方或者下方，则整个过程就终止。
+
+```java
 /**
- * @author bingo
- * @since 2018/11/22
+ * @author mcrwayfun
+ * @version 1.0
+ * @description
+ * @date Created in 2019/1/2
  */
-
 public class Solution {
     /**
      * 转圈打印矩阵
@@ -31,42 +41,60 @@ public class Solution {
      * @return 存放结果的list
      */
     public ArrayList<Integer> printMatrix(int[][] matrix) {
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> reList = new ArrayList<>();
         if (matrix == null) {
-            return list;
+            return reList;
         }
-        int m = matrix.length - 1;
-        int n = matrix[0].length - 1;
-        int i = 0, j = 0;
-        while (i <= m && j <= n) {
-            circlePrint(list, matrix, i++, j++, m--, n--);
+
+        int tR = 0;
+        int tC = 0;
+        int dR = matrix.length - 1;
+        int dC = matrix[0].length - 1;
+
+        while (tR <= dR && tC <= dC) {
+            printMatrix(matrix, tR++, tC++, dR--, dC--, reList);
         }
-        return list;
+
+        return reList;
     }
 
-    private void circlePrint(ArrayList<Integer> list, int[][] matrix, int i, int j, int m, int n) {
-        if (i == m) {
-            for (int p = j; p <= n; ++p) {
-                list.add(matrix[i][p]);
-            }
-        } else if (j == n) {
-            for (int p = i; p <= m; ++p) {
-                list.add(matrix[p][j]);
-            }
-        } else {
-            for (int p = j; p < n; ++p) {
-                list.add(matrix[i][p]);
-            }
-            for (int p = i; p < m; ++p ) {
-                list.add(matrix[p][n]);
-            }
-            for (int p = n; p > j; --p) {
-                list.add(matrix[m][p]);
-            }
-            for (int p = m; p > i; --p) {
-                list.add(matrix[p][j]);
+    public void printMatrix(int[][] matrix, int tR, int tC, int dR, int dC, ArrayList<Integer> reList) {
+        // 只有一行
+        if (tR == dR) {
+            for (int i = tC; i <= dC; i++) {
+                reList.add(matrix[tR][i]);
             }
         }
+        // 只有一列
+        else if (tC == dC) {
+            for (int i = tR; i <= dR; i++) {
+                reList.add(matrix[i][tC]);
+            }
+        } else {
+            int curR = tR;
+            int curC = tC;
+            // 从左到右
+            while (curC != dC) {
+                reList.add(matrix[tR][curC]);
+                curC++;
+            }
+            // 从上到下
+            while (curR != dR) {
+                reList.add(matrix[curR][dC]);
+                curR++;
+            }
+            // 从右到左
+            while (curC != tC) {
+                reList.add(matrix[dR][curC]);
+                curC--;
+            }
+            // 从下到上
+            while (curR != tR) {
+                reList.add(matrix[curR][tC]);
+                curR--;
+            }
+        }
+
     }
 }
 ```

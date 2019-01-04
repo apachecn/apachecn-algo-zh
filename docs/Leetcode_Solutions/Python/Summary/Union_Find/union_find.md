@@ -230,15 +230,17 @@ class UnionFind(object):
         y_root = self.find(y)
         if x_root == y_root:
             return
-        self.uf[x_root] = y_root
-        self.size[y_root] += self.size[x_root]
-        self.size[x_root] = 0
+        if self.size[x_root] < self.size[y_root]:
+            x_root, y_root = y_root, x_root
+        self.uf[y_root] = x_root
+        self.size[x_root] += self.size[y_root]
+        self.size[y_root] = 0
         self.count -= 1
 
     def connected(self, x, y):  # 判断两个节点是否联通
         return self.find(x) == self.find(y)
 
-    def count(self):  # 返回所有组的数目
+    def getCount(self):  # 返回所有组的数目
         return self.count      
 ```
 
