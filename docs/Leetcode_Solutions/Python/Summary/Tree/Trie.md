@@ -1,3 +1,5 @@
+## 一
+
 ```python
 class TrieNode(object):
 
@@ -44,6 +46,8 @@ def test():
 test()
 ```
 
+## 二
+
 还有一种更简单的模式
 
 ```python
@@ -65,8 +69,28 @@ if '#' in node:
 即可，使用方法见[第212题思路三](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/212._Word_Search_II.md)
 
 
+## 三
 
+更简便的构造方法：
 
+```python
+from functools import reduce
+
+        Trie = lambda: collections.defaultdict(Trie)
+        trie = Trie()
+
+        #reduce(..., S, trie) is trie[S[0]][S[1]][S[2]][...][S[S.length - 1]]        
+        nodes = [reduce(dict.__getitem__, word[::-1], trie)
+                 for word in words]
+
+        # node[i] 就是该word reduce到最后的空trie，即{}，说明该word reduce到最后是叶子节点
+        return sum(len(word) + 1
+                   for i, word in enumerate(words)
+                   if len(nodes[i]) == 0)
+
+```
+
+详细见[第820题](https://github.com/apachecn/awesome-algorithm/blob/master/docs/Leetcode_Solutions/Python/820._Short_Encoding_of_Words.md)
 
 
 
