@@ -76,17 +76,17 @@ if '#' in node:
 ```python
 from functools import reduce
 
-        Trie = lambda: collections.defaultdict(Trie)
-        trie = Trie()
+Trie = lambda: collections.defaultdict(Trie)
+trie = Trie()
 
-        #reduce(..., S, trie) is trie[S[0]][S[1]][S[2]][...][S[S.length - 1]]        
-        nodes = [reduce(dict.__getitem__, word[::-1], trie)
-                 for word in words]
+#reduce(..., S, trie) is trie[S[0]][S[1]][S[2]][...][S[S.length - 1]]        
+nodes = [reduce(dict.__getitem__, word[::-1], trie)
+         for word in words]
 
-        # node[i] 就是该word reduce到最后的空trie，即{}，说明该word reduce到最后是叶子节点
-        return sum(len(word) + 1
-                   for i, word in enumerate(words)
-                   if len(nodes[i]) == 0)
+# node[i] 就是该word reduce到最后的空trie，即{}，说明该word reduce到最后是叶子节点
+return sum(len(word) + 1
+           for i, word in enumerate(words)
+           if len(nodes[i]) == 0)
 
 ```
 
