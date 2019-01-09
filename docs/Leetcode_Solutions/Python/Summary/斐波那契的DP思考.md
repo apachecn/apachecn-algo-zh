@@ -40,3 +40,33 @@ print(tabulation_fib(4)) # 输出3
 
 
 这里memo用dict，用array也一样。当然用bottom up还有一点，可以只存每次最后两个数，可以save space.，这样就只用到constant space.
+
+
+还直接直接借用工具
+
+```python
+import functools
+
+
+@functools.lru_cache(maxsize=None)
+def fib(n):
+    if n <= 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+
+print(fib(10)) # 55
+```
+
+
+
+
+
+
+
+
+
+
+
+
