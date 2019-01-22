@@ -1,15 +1,37 @@
-# Some algorithm templates for better understanding!
+## Stack Implementation
 
-## 八大排序算法
+### Stack using Linked List
+```python
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-![](/images/SortingAlgorithm/八大排序算法性能.png)
+class Stack(object):
+    def __init__(self):
+        self.head = None
+        self.size = 0
 
-| 名称 | 动图 | 代码 |
-| --- | --- | --- |
-| 冒泡排序 | ![](/images/SortingAlgorithm/冒泡排序.gif) | [BubbleSort.py](/opt/git/LeetCode/docs/Algorithm\ Templates/Sort/BubbleSort.py) |
-| 插入排序 | ![](/images/SortingAlgorithm/直接插入排序.gif) | [InsertSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/InsertSort.py) |
-| 选择排序 | ![](/images/SortingAlgorithm/简单选择排序.gif) | [SelectionSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/SelectionSort.py) |
-| 快速排序 | ![](/images/SortingAlgorithm/快速排序.gif) | [QuickSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/QuickSort.py) |
-| 希尔排序 | ![](/images/SortingAlgorithm/希尔排序.png) | [ShellSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/ShellSort.py) |
-| 归并排序 | ![](/images/SortingAlgorithm/归并排序.gif) | [MergeSort.py](/opt/git/LeetCode/docs/src/py2.x/SortingAlgorithm/MergeSort.py) |
-| 基数排序 | ![](/images/SortingAlgorithm/基数排序.gif) |  |
+    def push(self, val):
+        new_node = ListNode(val)
+        new_node.next = self.head
+        self.head = new_node
+        self.size += 1
+
+    def pop(self):
+        if self.head == None:
+            return None
+        pop_val = self.head.val
+        self.head = self.head.next
+        self.size -= 1
+        return pop_val
+
+    def peek(self):
+        return self.head.val
+
+    def get_size(self):
+        return self.size
+
+    def is_empty(self):
+        return self.size == 0
+```
