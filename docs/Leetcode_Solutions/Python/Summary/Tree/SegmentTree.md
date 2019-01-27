@@ -22,6 +22,7 @@ The merging may be different for different problems. For this problem, merging i
 
 详细见[Segment Tree | Set 1 (Sum of given range)](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
 
+还可以看看[这里的solution3介绍](https://leetcode.com/problems/range-sum-query-mutable/solution/)
 
 下面是我的python实现，可以作为模版
 
