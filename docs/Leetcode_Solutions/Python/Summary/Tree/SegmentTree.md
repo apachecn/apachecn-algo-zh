@@ -26,77 +26,58 @@ The merging may be different for different problems. For this problem, merging i
 下面是我的python实现，可以作为模版
 
 ```python
-import math
 class SegmentTree(object):
     def __init__(self, nums):
-        self.nums = nums
-        self.range_len = len(nums)
-        power = math.ceil(math.log(self.range_len, 2)) if self.range_len else 0
-        self.st = [0] * (2 ** (power + 1))
-        self.constrcut(nums, 0, self.range_len - 1, 0)
+        """
+        :type nums: List[int]
+        """
+        self.n = len(nums)
+        self.tree = [0] * (2 * self.n)
 
-    # A utility function to get the middle index from corner indexes.
-    def getMid(self, start, end):
-        return start + (end - start) // 2
+        def buildTree(nums):
+            self.tree[self.n:] = nums[:]
+            for i in range(self.n - 1, 0, -1):
+                self.tree[i] = self.tree[2 * i] + self.tree[2 * i + 1]
 
-    # A recursive function that constructs Segment Tree for array[start..end].
-    # cur is the index of current node in segment tree self.st
-    # Time Complexity for tree construction is O(n).
-    # There are total 2n-1 nodes, and value of every node is calculated only once in tree construction.
-    def constrcut(self, nums, start, end, cur):  # O(N)
-        if start > end:
-            return
-        if start == end:
-            self.st[cur] = nums[start]
-            return nums[start]
-        mid = self.getMid(start, end)
-        self.st[cur] = self.constrcut(nums, start, mid, 2 * cur + 1) + \
-                       self.constrcut(nums, mid + 1, end, 2 * cur + 2)
-        return self.st[cur]
+        buildTree(nums)
 
-    def getSumHelper(self, start, end, query_start, query_end, cur):
-        if query_start <= start and query_end >= end:
-            return self.st[cur]
-        if end < query_start or start > query_end:
-            return 0
-        mid = self.getMid(start, end)
-        return self.getSumHelper(start, mid, query_start, query_end, 2 * cur + 1) + \
-               self.getSumHelper(mid + 1, end, query_start, query_end, 2 * cur + 2)
+    def update(self, i, val):
+        """
+        :type i: int
+        :type val: int
+        :rtype: void
+        """
+        i += self.n
+        self.tree[i] = val
+        while i > 0:
+            self.tree[i // 2] = self.tree[i // 2 * 2] + self.tree[i // 2 * 2 + 1]
+            i //= 2
 
-    # Time complexity to query is O(Logn).
-    # To query a sum, we process at most four nodes at every level and number of levels is O(Logn).
-    def getSum(self, query_start, query_end):
-        if query_start < 0 or query_end > self.range_len - 1 or query_start > query_end:
-            print('Invalid Input')
-            return -1
-        return self.getSumHelper(0, self.range_len - 1, query_start, query_end, 0)
-
-    # idx --> index of the element to be updated. This index is in input nums.
-    def updateValueHelper(self, start, end, idx, diff, cur):
-        if idx < start or idx > end:
-            return
-        self.st[cur] += diff
-        if end != start:
-            mid = self.getMid(start, end)
-            self.updateValueHelper(start, mid, idx, diff, 2 * cur + 1)
-            self.updateValueHelper(mid + 1, end, idx, diff, 2 * cur + 2)
-
-    # The time complexity of update is also O(Logn).
-    # To update a leaf value, we process one node at every level and number of levels is O(Logn).
-    def updateValue(self, idx, new_val):  # O(lgN)
-        if idx < 0 or idx > self.range_len - 1:
-            print('Invalid Input')
-            return
-        diff = new_val - self.nums[idx]
-        self.nums[idx] = new_val
-        self.updateValueHelper(0, self.range_len - 1, idx, diff, 0)
+    def sumRange(self, i, j):
+        """
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        i, j = i + self.n, j + self.n
+        sums = 0
+        while i <= j:
+            if i % 2 == 1:  # 左边多出一个不能成对的
+                sums += self.tree[i]
+                i += 1
+            if j % 2 == 0:  # 右边多出一个不能成对的
+                sums += self.tree[j]
+                j -= 1
+            i //= 2
+            j //= 2
+        return sums
 
 
 nums = [1, 3, 5, 7, 9, 11]
 s = SegmentTree(nums)
-print("Sum of values in given range = ", s.getSum(1, 3))
-s.updateValue(1, 9)
-print("Updated sum of values in given range = ", s.getSum(1, 3))
+print("Sum of values in given range = ", s.sumRange(1, 3))
+s.update(1, 9)
+print("Updated sum of values in given range = ", s.sumRange(1, 3))
 
 
 
