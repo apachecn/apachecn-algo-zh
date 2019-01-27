@@ -27,7 +27,7 @@ The merging may be different for different problems. For this problem, merging i
 
 ```python
 class SegmentTree(object):
-    def __init__(self, nums):
+    def __init__(self, nums): # O(N)
         """
         :type nums: List[int]
         """
@@ -41,7 +41,7 @@ class SegmentTree(object):
 
         buildTree(nums)
 
-    def update(self, i, val):
+    def update(self, i, val): # O(lgN)
         """
         :type i: int
         :type val: int
@@ -53,7 +53,7 @@ class SegmentTree(object):
             self.tree[i // 2] = self.tree[i // 2 * 2] + self.tree[i // 2 * 2 + 1]
             i //= 2
 
-    def sumRange(self, i, j):
+    def sumRange(self, i, j): # O(lgN)
         """
         :type i: int
         :type j: int
