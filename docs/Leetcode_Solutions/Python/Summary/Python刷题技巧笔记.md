@@ -225,11 +225,11 @@ python支持while-else 语句
 
 a = [[0] * 100000 for i in range(100000)]
 for i in range(100000):
-    for i in range(10):
+    for j in range(10):
         a[i][j] = 0
         
 for i in range(10):
-    for i in range(100000):
+    for j in range(100000):
         a[j][i] = 0
         
         
