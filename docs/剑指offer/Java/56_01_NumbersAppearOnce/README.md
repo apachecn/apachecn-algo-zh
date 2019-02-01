@@ -66,9 +66,7 @@ class Solution {
     }
 
     private boolean isBit1(int val, int index) {
-        for (int i = 0; i < index; ++i) {
-            val = val >> 1;
-        }
+        val = val >> index;
         return (val & 1) == 1;
     }
 }
