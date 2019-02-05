@@ -31,7 +31,7 @@ class Solution {
      * @return 翻转后的字符串
      */
     public String reverseWords(String s) {
-        if (s == null || s.length() < 2) {
+        if (s == null || s.length() == 0 || s.trim().equals("")) {
             return s;
         }
 
