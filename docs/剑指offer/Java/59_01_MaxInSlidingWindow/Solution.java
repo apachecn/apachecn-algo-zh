@@ -1,59 +1,37 @@
-import java.util.Deque;
-import java.util.LinkedList;
-
 /**
- * @author bingo
- * @since 2018/12/12
+ * @author mcrwayfun
+ * @version v1.0
+ * @date Created in 2019/02/05
+ * @description
  */
-
 class Solution {
-    /**
-     * 求滑动窗口的最大值
-     * 
-     * @param nums 数组
-     * @param k    滑动窗口的大小
-     * @return 最大值构成的数组
-     */
-    public int[] maxInWindows(int[] nums, int k) {
-        if (nums == null || k < 1 || k > nums.length) {
-            return null;
+    
+    public ArrayList<Integer> maxInWindows(int[] num, int size) {
+
+        ArrayList<Integer> reList = new ArrayList<>();
+        if (num == null || num.length < size || size < 1) {
+            return reList;
         }
-        Deque<Integer> queue = new LinkedList<>();
-        int[] res = new int[nums.length - k + 1];
-        for (int i = 0; i < k; ++i) {
-            if (queue.isEmpty()) {
-                queue.addLast(i);
-            } else {
-                if (nums[queue.getFirst()] < nums[i]) {
-                    while (!queue.isEmpty()) {
-                        queue.removeFirst();
-                    }
-                } else {
-                    while (nums[queue.getLast()] < nums[i]) {
-                        queue.removeLast();
-                    }
-                }
-                queue.addLast(i);
+
+        Deque<Integer> deque = new LinkedList<>();
+        for (int i = 0; i < num.length; i++) {
+
+            // 队尾元素比要入队的元素小，则把其移除（因为不可能成为窗口最大值）
+            while (!deque.isEmpty() && num[deque.getLast()] <= num[i]) {
+                deque.pollLast();
+            }
+            // 队首下标对应的元素不在窗口内（即窗口最大值），将其从队列中移除
+            while (!deque.isEmpty() && (i - deque.getFirst() + 1 > size)) {
+                deque.pollFirst();
+            }
+            // 把每次滑动的值加入到队列中
+            deque.add(i);
+            // 滑动窗口的首地址i大于size就写入窗口最大值
+            if (!deque.isEmpty() && i + 1 >= size) {
+                reList.add(num[deque.getFirst()]);
             }
         }
 
-        for (int i = k; i < nums.length; ++i) {
-            res[i - k] = nums[queue.getFirst()];
-            if (nums[i] < nums[queue.getFirst()]) {
-                while (nums[queue.getLast()] < nums[i]) {
-                    queue.removeLast();
-                }
-            } else {
-                while (!queue.isEmpty()) {
-                    queue.removeFirst();
-                }
-            }
-            queue.addLast(i);
-            if (i - queue.getFirst() == k) {
-                queue.removeFirst();
-            }
-        }
-        res[nums.length - k] = nums[queue.getFirst()];
-        return res;
+        return reList;
     }
 }
