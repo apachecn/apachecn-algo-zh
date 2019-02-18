@@ -1,3 +1,6 @@
+from __future__ import print_function
+
+
 class Solution:
     def InversePairs(self, data):
         # write code here
@@ -12,7 +15,6 @@ class Solution:
             data.remove(copy[i])
              
         return count%1000000007
-    
     
 
 count = 0
@@ -36,7 +38,7 @@ class Solution:
                     result.append(right[r])
                     r += 1
                     count += len(left)-l
-                    print 'count: ', count
+                    print('count: ', count)
             result += right[r:]
             result += left[l:]
  
