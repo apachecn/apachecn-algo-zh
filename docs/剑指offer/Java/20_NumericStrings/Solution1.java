@@ -43,7 +43,7 @@ public class Solution1 {
 
     private boolean scanInteger(char[] str) {
         // 去除符号
-        while (index < str.length && (str[index] == '+' || str[index] == '-')) {
+       if (index < str.length && (str[index] == '+' || str[index] == '-')) {
             index++;
         }
 

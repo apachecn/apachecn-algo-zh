@@ -48,6 +48,7 @@
 - [Algorithm Archive](https://github.com/algorithm-archivists/algorithm-archive)
 - [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)
 - [算法珠玑](https://soulmachine.gitbooks.io/algorithm-essentials/java/)
+- [AlgoCasts 用心做好每一个算法视频](https://algocasts.io)
 
 ## Sponsor
 1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
