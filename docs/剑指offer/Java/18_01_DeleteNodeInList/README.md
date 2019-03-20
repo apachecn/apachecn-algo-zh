@@ -43,7 +43,7 @@ public class Solution {
         // 删除的是尾节点
         else {
             ListNode ptr = head;
-            while (ptr.next != tobeDeleted) {
+            while (ptr.next != tobeDelete) {
                 ptr = ptr.next;	
           	}
             ptr.next = null;
