@@ -32,8 +32,11 @@ public class Solution {
         }
         // 删除的是尾节点
         else {
-            // 当head遍历到tobeDelete时，指向的是同一个引用。可以直接将tobeDelete = null即可
-            tobeDelete = null;
+            ListNode ptr = head;
+            while (ptr.next != tobeDelete) {
+            	ptr = ptr.next;
+            }
+            ptr.next = null;
         }
 
         return head;
