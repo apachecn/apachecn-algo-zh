@@ -1,48 +1,52 @@
-import java.util.*;
-
 /**
- * @author bingo
- * @since 2018/12/12
+ * @author mcrwayfun
+ * @version v1.0
+ * @date Created in 2019/02/03
+ * @description
  */
-
-class Solution {
-
-    /**
-     * 找出和为sum的连续正整数序列
-     * 
-     * @param sum 和
-     * @return 结果列表
-     */
+public class Solution {
+    
     public List<List<Integer>> findContinuousSequence(int sum) {
-        List<List<Integer>> res = new ArrayList<>();
+
+        List<List<Integer>> reList = new ArrayList<>();
+
         if (sum < 3) {
-            return res;
+            return reList;
         }
-        int p = 1, q = 2;
-        int mid = (1 + sum) >> 1;
-        int curSum = p + q;
-        while (p < mid) {
+
+        int left = 1;
+        int right = 2;
+        int mid = (sum + 1) / 2;
+        int curSum = left + right;
+
+        // left小于sum一半即可(1/2n)
+        while (left < mid) {
+
+            // 等与sum则加入列表中(2~1/2n)
             if (curSum == sum) {
-                res.add(getList(p, q));
+                reList.add(getListFromleftToright(left, right));
+                // right增加并重新寻找序列
+                right++;
+                curSum += right;
+            } else if (curSum > sum) {
+                curSum -= left;
+                left++;
+            } else {
+                right++;
+                curSum += right;
             }
-            while (curSum > sum && p < mid) {
-                curSum -= p;
-                ++p;
-                if (curSum == sum) {
-                    res.add(getList(p, q));
-                }
-            }
-            ++q;
-            curSum += q;
         }
-        return res;
+
+        return reList;
     }
 
-    private List<Integer> getList(int from, int to) {
-        List<Integer> res = new ArrayList<>();
-        for (int i = from; i <= to; ++i) {
-            res.add(i);
+    private List<Integer> getListFromleftToright(int left, int right) {
+
+        List<Integer> tempList = new ArrayList<>();
+        for (int i = left; i <= right; i++) {
+            tempList.add(i);
         }
-        return res;
+
+        return tempList;
     }
 }

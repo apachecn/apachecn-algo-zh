@@ -1,4 +1,4 @@
-## [和为S的连续正数序列](https://www.acwing.com/problem/content/72/)
+## 和为S的连续正数序列
 
 ### 题目描述
 输入一个正数 s，打印出所有和为 s 的连续正数序列（至少含有两个数）。
@@ -13,57 +13,61 @@
 ```
 
 ### 解法
-用两个指针 `p, q` 指示序列的最小值和最大值。如果序列和大于 s，则从序列中去掉较小的值，即 `++p`；如果序列和小于 s，则序列向右再包含一个数字，即 `++q`。
+这道题同样利用两个指针left和right，将(1,2)作为初始序列。当序列和大于所求值，则left向前走，把最小的数排除了；当序列和小于所求值，则right向前走，把一个更大的数包进序列中；如果序列和等于所求值，则求值区间[left,right]中的所有数并加入到列表中，并且right向前走，把一个更大的值包入序列中。循环直到 `left < (sum + 1)/2`  。
 
-当 p 超过 s 的一半时，停止。
+这道题的time complexity为O(n^2)，space complexity为O(1)
 
 ```java
-import java.util.*;
-
 /**
- * @author bingo
- * @since 2018/12/12
+ * @author mcrwayfun
+ * @version v1.0
+ * @date Created in 2019/02/03
+ * @description
  */
-
-class Solution {
-
-    /**
-     * 找出和为sum的连续正整数序列
-     * 
-     * @param sum 和
-     * @return 结果列表
-     */
+public class Solution {
+    
     public List<List<Integer>> findContinuousSequence(int sum) {
-        List<List<Integer>> res = new ArrayList<>();
+
+        List<List<Integer>> reList = new ArrayList<>();
+
         if (sum < 3) {
-            return res;
+            return reList;
         }
-        int p = 1, q = 2;
-        int mid = (1 + sum) >> 1;
-        int curSum = p + q;
-        while (p < mid) {
+
+        int left = 1;
+        int right = 2;
+        int mid = (sum + 1) / 2;
+        int curSum = left + right;
+
+        // left小于sum一半即可(1/2n)
+        while (left < mid) {
+
+            // 等与sum则加入列表中(2~1/2n)
             if (curSum == sum) {
-                res.add(getList(p, q));
+                reList.add(getListFromleftToright(left, right));
+                // right增加并重新寻找序列
+                right++;
+                curSum += right;
+            } else if (curSum > sum) {
+                curSum -= left;
+                left++;
+            } else {
+                right++;
+                curSum += right;
             }
-            while (curSum > sum && p < mid) {
-                curSum -= p;
-                ++p;
-                if (curSum == sum) {
-                    res.add(getList(p, q));
-                }
-            }
-            ++q;
-            curSum += q;
         }
-        return res;
+
+        return reList;
     }
 
-    private List<Integer> getList(int from, int to) {
-        List<Integer> res = new ArrayList<>();
-        for (int i = from; i <= to; ++i) {
-            res.add(i);
+    private List<Integer> getListFromleftToright(int left, int right) {
+
+        List<Integer> tempList = new ArrayList<>();
+        for (int i = left; i <= right; i++) {
+            tempList.add(i);
         }
-        return res;
+
+        return tempList;
     }
 }
 ```

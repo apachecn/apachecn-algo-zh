@@ -1,4 +1,4 @@
-## [滑动窗口的最大值](https://www.acwing.com/problem/content/75/)
+## 滑动窗口的最大值
 
 ### 题目描述
 给定一个数组和滑动窗口的大小，请找出所有滑动窗口里的最大值。
@@ -10,6 +10,7 @@
 - 数据保证 k 大于 0，且 k 小于等于数组长度。
 
 **样例**
+
 ```
 输入：[2, 3, 4, 2, 6, 2, 5, 1] , k=3
 
@@ -17,71 +18,53 @@
 ```
 
 ### 解法
-利用双向队列，保证队列头部存放的是最大值的下标，当队列头部下标过期时弹出。
+使用一个双端队列，保证队首存放的是窗口最大值的下标。遍历数组，
 
-细节：
+1. 队尾元素比要入队的元素小，则把其移除（因为不可能成为窗口最大值）。
+2. 队首下标对应的元素不在窗口内（即窗口最大值），将其从队列中移除。
+3. 把每次滑动值的下标加入队列中（经过步骤1、2，此时加入队列的下标要么是当前窗口最大值的下标，要么是小于窗口最大值的下标）。
+4. 滑动窗口的首地址i大于size就写入窗口最大值。
 
-- 当数组元素小于队列头部下标对应的元素时，在队列尾部中插入数组元素下标。（如果队列尾部有比该元素小的元素，先弹出，再插入。）
-- 当数组元素大于或等于队列头部下标构成的元素时，弹出元素直至队列为空，再插入数组元素下标。
+time complexity:O(n)
+
+space complexity:O(k) , k is the size
 
 ```java
-import java.util.Deque;
-import java.util.LinkedList;
-
 /**
- * @author bingo
- * @since 2018/12/12
+ * @author mcrwayfun
+ * @version v1.0
+ * @date Created in 2019/02/05
+ * @description
  */
-
 class Solution {
-    /**
-     * 求滑动窗口的最大值
-     * 
-     * @param nums 数组
-     * @param k 滑动窗口的大小
-     * @return 最大值构成的数组
-     */
-    public int[] maxInWindows(int[] nums, int k) {
-        if (nums == null || k < 1 || k > nums.length) {
-            return null;
+    
+    public ArrayList<Integer> maxInWindows(int[] num, int size) {
+
+        ArrayList<Integer> reList = new ArrayList<>();
+        if (num == null || num.length < size || size < 1) {
+            return reList;
         }
-        Deque<Integer> queue = new LinkedList<>();
-        int[] res = new int[nums.length - k + 1];
-        for (int i = 0; i < k; ++i) {
-            if (queue.isEmpty()) {
-                queue.addLast(i);
-            } else {
-                if (nums[queue.getFirst()] < nums[i]) {
-                    while (!queue.isEmpty()) {
-                        queue.removeFirst();
-                    }
-                } else {
-                    while (nums[queue.getLast()] < nums[i]) {
-                        queue.removeLast();
-                    }
-                }
-                queue.addLast(i);
+
+        Deque<Integer> deque = new LinkedList<>();
+        for (int i = 0; i < num.length; i++) {
+
+            // 队尾元素比要入队的元素小，则把其移除（因为不可能成为窗口最大值）
+            while (!deque.isEmpty() && num[deque.getLast()] <= num[i]) {
+                deque.pollLast();
+            }
+            // 队首下标对应的元素不在窗口内（即窗口最大值），将其从队列中移除
+            while (!deque.isEmpty() && (i - deque.getFirst() + 1 > size)) {
+                deque.pollFirst();
+            }
+            // 把每次滑动的值加入到队列中
+            deque.add(i);
+            // 滑动窗口的首地址i大于size就写入窗口最大值
+            if (!deque.isEmpty() && i + 1 >= size) {
+                reList.add(num[deque.getFirst()]);
             }
         }
 
-        for (int i = k; i < nums.length; ++i) {
-            res[i - k] = nums[queue.getFirst()];
-            if (nums[i] < nums[queue.getFirst()]) {
-                while (nums[queue.getLast()] < nums[i]) {
-                    queue.removeLast();
-                }
-            } else {
-                while (!queue.isEmpty()) {
-                    queue.removeFirst();
-                }
-            }
-            queue.addLast(i);
-            if (i - queue.getFirst() == k) {
-                queue.removeFirst();
-            }
-        }
-        res[nums.length - k] = nums[queue.getFirst()];
-        return res;
+        return reList;
     }
 }
 ```
