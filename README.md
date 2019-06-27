@@ -20,7 +20,7 @@
 </table>
 
 ## Contents
-https://xiaozhuanlan.com/Lisanaaa
+## [专栏](https://xiaozhuanlan.com/Lisanaaa): https://xiaozhuanlan.com/Lisanaaa
 
 1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
     - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
