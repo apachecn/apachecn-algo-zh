@@ -1,5 +1,7 @@
 <div align="center">
-    <a href=""> <img src="http://data.apachecn.org/img/logo.jpg" width="350" height="200"></a>
+    <a href="https://www.apachecn.org">
+        <img width="200" src="http://data.apachecn.org/img/logo.jpg">
+    </a>
     <br>
     <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
 </div>
@@ -29,6 +31,7 @@
 1. 请保持项目的协议合法性和开源性，我们都是非商业化协议。
 2. 以后捐赠，就不要再说是你自己的一个人的项目了，这个就是组织项目。（项目成长就不是你一个的功劳！）
 3. 所有在 ApacheCN 平台上的项目，不能以牺牲组织和读者的利益为前提，来牟取个人私利，如果违反，一律清退。
+4. 谢谢 [Lisanaaa](https://github.com/Lisanaaa) 逼着我们成长，让我们认清更多的人与事。
 
 以上内容，ApacheCN具有最终解释权，ApacheCN支持个人基于组织内容做创业，但绝允许以牺牲组织和读者为前提。
 
