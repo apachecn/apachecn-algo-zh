@@ -20,7 +20,7 @@
 
 最开始该项目是 [@片刻](https://github.com/jiangzhonglian) 和 [@小瑶](https://github.com/chenyyx) 为了求职面试所发起的，打算从0开始！ 后来 [Lisanaaa](https://github.com/Lisanaaa) 说愿意提供他的项目100多道题（该项目来源与另外一个小哥哥 [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)，也有同意的邮件授权！），后来组织就删掉了原本建的项目，使用了 [Lisanaaa](https://github.com/Lisanaaa) 的项目。
 
-由于 [Lisanaaa](https://github.com/Lisanaaa) 个人商业化原因，主动删除他自己的代码（<https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/Python>）, 严重损害了读者和各位贡献者的权益。所以**组织和他解除了关系，直接清退**。
+由于 [Lisanaaa](https://github.com/Lisanaaa) 个人商业化原因，主动删除他自己的代码（<https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/Python>， 其中包括组织部分人的更新和优化）, 严重损害了读者和各位贡献者的权益。所以**组织和他解除了关系，直接清退**。
 
 在项目归宿上面，我和他有进行深入讨论，但无法达成共识。这个项目如果给他，他名利双收，损害了组织和其他贡献者的权益，组织和其他贡献者拒绝接受！这个项目如果交给组织，他不同意，他说这是他的项目。（说实话，我真的蛮想笑），所以该项目不再更新，迁移至新的项目上，该项目会长期冻结，以惊醒ApacheCN，贡献者，或者其他的开源组织！
 
