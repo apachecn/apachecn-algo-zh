@@ -1,109 +1,38 @@
 <div align="center">
-    <a href=""> <img src="images/readme_badges/WechatIMG649.jpeg" width="350" height="200"></a>
+    <a href=""> <img src="http://data.apachecn.org/img/logo.jpg" width="350" height="200"></a>
     <br>
     <a href=""> <img src="https://img.shields.io/badge/%3E-awesome-red.svg"></a> <a href=""><a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python"> <img src="https://img.shields.io/badge/%3E-algorithm-red.svg"></a> <a href="https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python"> <img src="https://img.shields.io/badge/%3E-leetcode-red.svg"></a> 
 </div>
 
 <h1 align="center">结构化算法刷题训练指南</h1>
 
-> Special Sponsors
 
-<table>
-      <tbody>
-        <tr>
-          <td align="center" valign="middle">
-            <a href="https://coding.net/?utm_source=ApacheCN&utm_medium=banner&utm_campaign=march2019" target="_blank">
-              <img width="1080" src="http://data.apachecn.org/img/SpecialSponsors/CodingNet.png">
-            </a>
-          </td>
-      </tbody>
-</table>
+> 公告声明 
 
-## Contents
-## [专栏](https://xiaozhuanlan.com/Lisanaaa): https://xiaozhuanlan.com/Lisanaaa
+该项目 暂停更新，迁移至： 
 
-1. [Leetcode Solutions](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions)
-    - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Python)
-    - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/Java)
-    - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/JavaScript)
-    - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/C++)
-    - [ipynb](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Leetcode_Solutions/ipynb)
-2. [剑指 Offer](https://github.com/apachecn/awesome-algorithm/tree/master/docs/%E5%89%91%E6%8C%87offer)
-    - [Python](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Python)
-    - [Java](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/Java)
-    - [JavaScript](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/JavaScript)
-    - [C++](https://github.com/apachecn/awesome-algorithm/tree/master/docs/剑指offer/C++)
-2. [Algorithm Implementation](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation)
-    - [Python](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Python)
-    - [Java](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/Java)
-    - [JavaScript](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/JavaScript)
-    - [C++](https://github.com/apachecn/awesome-leetcode/tree/master/docs/Algorithm_Implementation/C++)
+1. 项目地址: <https://github.com/apachecn/Interview>
+2. 刷题地址: <https://github.com/apachecn/Interview/blob/master/docs/Algorithm/README.md>
 
-## Sponsor
-1. [Lisanaaa](https://github.com/Lisanaaa): **Feel free to see my profile and send me an email if you have any job opportunities.**
-2. [jiangzhonglian](https://github.com/jiangzhonglian)
+> 事件声明
 
-## Contributors
-1. [Lisanaaa](https://github.com/Lisanaaa)
-2. [jiangzhonglian](https://github.com/jiangzhonglian)
-3. [chenyyx](https://github.com/chenyyx)
-4. [cclauss](https://github.com/cclauss)
-5. [yudaer](https://github.com/yudaer)
-6. [yuzhoujr](https://github.com/yuzhoujr)
-7. [wizardforcel](https://github.com/wizardforcel)
-8. [Stuming](https://github.com/Stuming)
-9. [GaofanHu](https://github.com/GaofanHu)
-10. [er3456qi](https://github.com/er3456qi)
-11. [xshahq](https://github.com/xshahq)
-12. [xiaqunfeng](https://github.com/xiaqunfeng)
-13. [CaviarChen](https://github.com/CaviarChen)
-14. [royIdoodle](https://github.com/royIdoodle)
-15. [MarsXue](https://github.com/MarsXue)
-16. [nature1995](https://github.com/nature1995)
+最开始该项目是 [@片刻](https://github.com/jiangzhonglian) 和 [@小瑶](https://github.com/chenyyx) 为了求职面试所发起的，打算从0开始！ 后来 [Lisanaaa](https://github.com/Lisanaaa) 说愿意提供他的项目100多道题（该项目来源与另外一个小哥哥 [KrisYu的Github](https://github.com/KrisYu/LeetCode-CLRS-Python)，也有同意的邮件授权！），后来组织就删掉了原本建的项目，使用了 [Lisanaaa](https://github.com/Lisanaaa) 的项目。
 
-you can make a pull request if you are not in the list above
-## Pull Request
+由于 [Lisanaaa](https://github.com/Lisanaaa) 个人商业化原因，主动删除他自己的代码（<https://github.com/apachecn/awesome-algorithm/tree/master/docs/Leetcode_Solutions/Python>）, 严重损害了读者和各位贡献者的权益。所以**组织和他解除了关系，直接清退**。
 
-If you feel your PR is satisfied with one of the conditions below, we are glad to merge it. Welcome to contributions, open to suggestions!
+在项目归宿上面，我和他有进行深入讨论，但无法达成共识。这个项目如果给他，他名利双收，损害了组织和其他贡献者的权益，组织和其他贡献者拒绝接受！这个项目如果交给组织，他不同意，他说这是他的项目。（说实话，我真的蛮想笑），所以该项目不再更新，迁移至新的项目上，该项目会长期冻结，以惊醒ApacheCN，贡献者，或者其他的开源组织！
 
-- Different thinking
-- Time & Space complexity optimization
-- Follow up solutions
-- Unsubmitted questions
+> 事件启发
 
-Feel free to get our [Pull Request template/模版](https://github.com/apachecn/awesome-algorithm/blob/master/PULL_REQUEST_TEMPLATE.md)
+以后所有的项目，如果捐赠到 ApacheCN 上：
 
-***Title format(文件命名格式): xxx._word1_word2_word3_word4.md***
+1. 请保持项目的协议合法性和开源性，我们都是非商业化协议。
+2. 以后捐赠，就不要再说是你自己的一个人的项目了，这个就是组织项目。（项目成长就不是你一个的功劳！）
+3. 所有在 ApacheCN 平台上的项目，不能以牺牲组织和读者的利益为前提，来牟取个人私利，如果违反，一律清退。
 
-If you are a newbie of Git, please check this [tutorial](https://github.com/apachecn/kaggle/tree/dev/docs/GitHub) we have made.
+以上内容，ApacheCN具有最终解释权，ApacheCN支持个人基于组织内容做创业，但绝允许以牺牲组织和读者为前提。
 
-## Support
-- [GitHub issues](https://github.com/apachecn/awesome-leetcode/issues) for bug reports and new feature requests.
-- Our ```[QQ Group: 812791932]``` to ask questions, discuss features, and for general discussion.
+> 补充说明
 
-## Acknowledgement
-
-> Please note, this repository is inspired from [KrisYu](https://github.com/KrisYu/LeetCode-CLRS-Python), and here is the [approve letter](https://github.com/apachecn/LeetCode/blob/master/images/Project%20cornerstone/approve%20letter.md). However, it has been modified, added and improved to reflect our knowledge, wisdom and efforts.
-
-## Log
-
-- Aug 2017, I started to brush leetcode questions using Python .
-- Oct 2017, I saw Kris Yu's algorithm project on Github, but he has not updated it. I decided to build new one on my own and got his permission successfully.
-- Dec 2017, this project was only considered as my record of question solutions.
-- Mar 2018, the project continued to have dozens of stars. I felt that my thinking and funny words were helpful to others, determined to persist, and never stop.
-- May 2018, I had to start my internship, less update, but the number of stars reached 200.
-- Sep 2018, since I was also looking for a domestic job, I would send my own code link on the nowcoder.com  every time I finished the online tech test. The strategy for attracting traffic was very successful, the number of stars reached 1.7k in a rush way. At this moment, I found that my thinking and description styles are very popular, but the power of one person is limited, so I would like to recruit some like-minded people to contribute to the project like myself. 
-
-The current positioning of this project is to implement the basic algorithm in different programming languages, refining the boilerplate, and summarize the ideas. 
-
-### ***Two words: boilerplate + ideas***
-
-## License
-
-GPL-3.0 © [ApacheCN](https://github.com/apachecn)
-
-## Organization 
-
-* [ApacheCN 组织资源](https://github.com/apachecn/home): https://github.com/apachecn/home
-
-> **欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远**
+* 飞龙 | ApacheCN: 如果开源项目有了通用的商业模式，ApacheCN 无疑会是受益最大的。但是我们不能仅仅依赖其他项目，我们要自己寻找变现途径。
+* 片刻 | ApacheCN: 再次申明：如果ApacheCN最大的受益者，那么我觉得最最大的受益者是这群一直在贡献的人，因为文档的负责人就是为热心的人准备的，只要你愿意，随时都可以申请当负责人，我们的衡量标准就是热心、积极、有责任感；没有什么学历、公司背景、薪资水平、工作年限的要求！至于变现，就是如何利用文档产生价值，让用户和自己收益。ApacheCN 永远都只是一个开源资源存放地，怎么利用，就是各位贡献者脑洞大开的事情了！ 而我们几个创始人，也算是贡献者的一部分，一样也需要不断的去寻找变现的途径，和ApacheCN 达到共赢，而是独自占有，这的确不符合我们开源组织的气质！ 所以期待有想法愿意参与变现的人，从而实现ApacheCN和贡献者的共赢，而不是单方面！
