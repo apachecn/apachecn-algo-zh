@@ -6,8 +6,27 @@
 
 * 英文官网: https://leetcode.com
 * 中文官网: https://leetcode-cn.com
-* [ApacheCN 组织资源](https://docs.apachecn.org/): <https://docs.apachecn.org/>
+* [在线阅读(https://algo.apachecn.org/)
+* [ApacheCN 组织资源](https://docs.apachecn.org/)
 * **ApacheCN - 面试求职群【724187166】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=9bcf2fb3985835c9c2f15783ec9c85822e23be1191a6581eaf22f574b5192b19"><img border="0" src="http://data.apachecn.org/img/logo/ApacheCN-group.png" alt="ApacheCN - 面试求职群[724187166]" title="ApacheCN - 面试求职群[724187166]"></a>**
+
+## 下载
+
+### PYPI
+
+```
+pip install algo-zh
+algo-zh <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g algo-zh
+algo-zh <port>
+# 访问 http://localhost:{port} 查看文档
+```
 
 ## 关于刷题
 
@@ -113,3 +132,7 @@
 - [shejie1993](https://shenjie1993.gitbooks.io/leetcode-python/content/096%20Unique%20Binary%20Search%20Trees.html)
 - [编程之法：面试和算法心得](https://legacy.gitbook.com/book/wizardforcel/the-art-of-programming-by-july/details)
 - [算法/NLP/深度学习/机器学习面试笔记](https://github.com/imhuay/Interview_Notes-Chinese)
+
+## 赞助我们
+
+![](https://imgconvert.csdnimg.cn/aHR0cDovL2hvbWUuYXBhY2hlY24ub3JnL2ltZy9hYm91dC9kb25hdGUuanBn?x-oss-process=image/format,png)
