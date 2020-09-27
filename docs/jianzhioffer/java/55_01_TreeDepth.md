@@ -1,4 +1,4 @@
-## [二叉树的深度](https://www.acwing.com/problem/content/67/)
+## 二叉树的深度
 
 ### 题目描述
 输入一棵二叉树的根结点，求该树的深度。

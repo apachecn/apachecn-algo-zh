@@ -1,4 +1,6 @@
-# [《剑指 Offer》 Java 版实现](https://github.com/doocs/coding-interview)
+# 剑指 Offer Java 题解
+
+> 来源：[《剑指 Offer》 Java 版实现](https://github.com/doocs/coding-interview)
 
 | # | Title |
 |---|---|
