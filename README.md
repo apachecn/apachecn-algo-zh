@@ -6,7 +6,7 @@
 
 * 英文官网: https://leetcode.com
 * 中文官网: https://leetcode-cn.com
-* [在线阅读(https://algo.apachecn.org/)
+* [在线阅读](https://algo.apachecn.org/)
 * [ApacheCN 组织资源](https://docs.apachecn.org/)
 * **ApacheCN - 面试求职群【724187166】<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=9bcf2fb3985835c9c2f15783ec9c85822e23be1191a6581eaf22f574b5192b19"><img border="0" src="http://data.apachecn.org/img/logo/ApacheCN-group.png" alt="ApacheCN - 面试求职群[724187166]" title="ApacheCN - 面试求职群[724187166]"></a>**
 
