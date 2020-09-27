@@ -4,7 +4,7 @@
 +   [3. Longest Substring Without Repeating Characters](0003._Longest_Substring_Without_Repeating_Characters.md)
 +   [4. Median of Two Sorted Arrays](0004._Median_of_Two_Sorted_Arrays.md)
 +   [5. Longest Palindromic Substring](0005._Longest_Palindromic_Substring.md)
-+   [6. ZigZag Conversion](0006._ ZigZag_Conversion.md)
++   [6. ZigZag Conversion](0006._ZigZag_Conversion.md)
 +   [7. Reverse Integer](0007._Reverse_Integer.md)
 +   [23. Merge K Sorted Lists](0023._Merge_K_Sorted_Lists.md)
 +   [141. Linked List Cycle](0141._linked_list_cycle.md)
