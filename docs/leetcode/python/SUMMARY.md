@@ -61,7 +61,7 @@
 + [066 plus one](066._plus_one.md)
 + [067 add binary](067._add_binary.md)
 + [069 sqrt(x)](069._sqrt(x).md)
-+ [070 Climbing Stairs](070. Climbing Stairs.md)
++ [070 Climbing Stairs](070._Climbing_Stairs.md)
 + [072 edit distance](072._edit_distance.md)
 + [073 Set Matrix Zeroes](073._Set_Matrix_Zeroes.md)
 + [074 search a 2d matrix](074._search_a_2d_matrix.md)

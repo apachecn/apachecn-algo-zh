@@ -319,7 +319,7 @@
     +   [066 plus one](docs/leetcode/python/066._plus_one.md)
     +   [067 add binary](docs/leetcode/python/067._add_binary.md)
     +   [069 sqrt(x)](docs/leetcode/python/069._sqrt(x).md)
-    +   [070 Climbing Stairs](docs/leetcode/python/070. Climbing Stairs.md)
+    +   [070 Climbing Stairs](docs/leetcode/python/070._Climbing_Stairs.md)
     +   [072 edit distance](docs/leetcode/python/072._edit_distance.md)
     +   [073 Set Matrix Zeroes](docs/leetcode/python/073._Set_Matrix_Zeroes.md)
     +   [074 search a 2d matrix](docs/leetcode/python/074._search_a_2d_matrix.md)
