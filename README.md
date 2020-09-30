@@ -12,6 +12,14 @@
 
 ## 下载
 
+### Docker
+
+```
+docker pull apachecn0/algo-zh
+docker run -tid -p <port>:80 apachecn0/algo-zh
+# 访问 http://localhost:{port} 查看文档
+```
+
 ### PYPI
 
 ```
