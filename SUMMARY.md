@@ -1,4 +1,4 @@
-+   [结构化算法刷题训练指南](README.md)
++   [ApacheCN 数据结构与算法译文集](README.md)
 +   [Leetcode C++ 题解](docs/leetcode/cpp/README.md)
     +   [1. Two Sum](docs/leetcode/cpp/0001._Two_Sum.md)
     +   [2. Add Two Numbers](docs/leetcode/cpp/0002._Add_Two_Numbers.md)
